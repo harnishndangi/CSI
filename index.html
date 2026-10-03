@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI Club — Computer Society of India</title>
+    <meta name="description" content="CSI Club at our college — connecting students through technology, events, and innovation. Join the Computer Society of India student chapter." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-logo" aria-label="CSI Club Logo">
+        <span class="asterisk-logo">✱</span>
+        <span class="nav-brand">CSI</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-page="home" id="nav-home">HOME</a>
+        <a href="#about" class="nav-link" data-page="about" id="nav-about">ABOUT</a>
+        <a href="#events" class="nav-link" data-page="events" id="nav-events">EVENTS</a>
+        <a href="#team" class="nav-link" data-page="team" id="nav-team">TEAM</a>
+        <a href="#gallery" class="nav-link" data-page="gallery" id="nav-gallery">GALLERY</a>
+        <a href="#blogs" class="nav-link" data-page="blogs" id="nav-blogs">BLOGS</a>
+        <a href="#contact" class="nav-link" data-page="contact" id="nav-contact">CONTACT</a>
+      </div>
+      <div class="nav-status">
+        <span class="status-text">ACCEPTING MEMBERS</span>
+        <span class="status-dot" aria-hidden="true"></span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">X</button>
+      <nav class="mobile-nav">
+        <a href="#home" class="mobile-link" data-page="home">HOME</a>
+        <span class="mobile-sep">✱</span>
+        <a href="#about" class="mobile-link" data-page="about">ABOUT</a>
+        <span class="mobile-sep">✱</span>
+        <a href="#events" class="mobile-link" data-page="events">EVENTS</a>
+        <span class="mobile-sep">✱</span>
+        <a href="#team" class="mobile-link" data-page="team">TEAM</a>
+        <span class="mobile-sep">✱</span>
+        <a href="#gallery" class="mobile-link" data-page="gallery">GALLERY</a>
+        <span class="mobile-sep">✱</span>
+        <a href="#blogs" class="mobile-link" data-page="blogs">BLOGS</a>
+        <span class="mobile-sep">✱</span>
+        <a href="#contact" class="mobile-link" data-page="contact">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- ═══════════════════════════════════════ PAGE: HOME ═══════════════════════════════════════ -->
+    <section class="page active" id="home" aria-label="Home page">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-heading">
+          <h1 class="display-heading">
+            <span class="line line-1">CODE</span>
+            <span class="line line-2">THAT <span class="asterisk-badge" aria-hidden="true">✱</span></span>
+            <span class="line line-3 blue">CONNECTS</span>
+            <span class="line line-4">THE DOTS.</span>
+          </h1>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <span class="big-asterisk">✱</span>
+              <div class="hero-decoration squiggle">
+                <svg width="60" height="30" viewBox="0 0 60 30" fill="none"><path d="M0 15 Q15 0 30 15 Q45 30 60 15" stroke="#C9FF2F" stroke-width="3" fill="none"/><path d="M0 22 Q15 7 30 22 Q45 37 60 22" stroke="#C9FF2F" stroke-width="3" fill="none"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="wireframe-globe" aria-hidden="true">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+              <ellipse cx="45" cy="45" rx="40" ry="40" stroke="#0D0D0D" stroke-width="1.2"/>
+              <ellipse cx="45" cy="45" rx="20" ry="40" stroke="#0D0D0D" stroke-width="1.2"/>
+              <ellipse cx="45" cy="45" rx="40" ry="15" stroke="#0D0D0D" stroke-width="1.2"/>
+              <line x1="5" y1="45" x2="85" y2="45" stroke="#0D0D0D" stroke-width="1.2"/>
+              <line x1="45" y1="5" x2="45" y2="85" stroke="#0D0D0D" stroke-width="1.2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero-intro">
+          <p class="intro-text">WE ARE THE CSI STUDENT CHAPTER — A COMMUNITY OF CURIOUS MINDS BUILDING THE FUTURE THROUGH TECHNOLOGY, COLLABORATION AND INNOVATION.</p>
+          <a href="#about" class="btn-pill-blue" id="hero-cta" data-page="about">
+            <span class="btn-icon-circle"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            EXPLORE MORE
+          </a>
+        </div>
+      </div>
+
+      <!-- Marquee Ticker -->
+      <div class="marquee-bar" aria-hidden="true">
+        <div class="marquee-track">
+          <span>HACKATHONS * WORKSHOPS * SEMINARS * NETWORKING * PROJECTS * COMPETITIONS * HACKATHONS * WORKSHOPS * SEMINARS * NETWORKING * PROJECTS * COMPETITIONS *</span>
+        </div>
+      </div>
+
+      <!-- Highlights Grid -->
+      <div class="highlights-section">
+        <div class="highlights-label">
+          <h2 class="section-heading lime">WHAT WE<br>DO *</h2>
+          <p class="section-desc">From concept to code — we build, innovate, and grow together.</p>
+          <a href="#events" class="btn-lime" data-page="events" id="highlights-cta">VIEW EVENTS</a>
+        </div>
+        <div class="highlights-grid">
+          <div class="highlight-cell" tabindex="0">
+            <div class="hi-icon">
+              <svg width="32" height="32" fill="none" stroke="#0D0D0D" stroke-width="1.3" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="1"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="hi-title">WORKSHOPS</h3>
+            <p class="hi-desc">Hands-on sessions on trending tech stacks and tools.</p>
+          </div>
+          <div class="highlight-cell" tabindex="0">
+            <div class="hi-icon">
+              <svg width="32" height="32" fill="none" stroke="#0D0D0D" stroke-width="1.3" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+            </div>
+            <h3 class="hi-title">HACKATHONS</h3>
+            <p class="hi-desc">48-hour sprints to turn bold ideas into real products.</p>
+          </div>
+          <div class="highlight-cell" tabindex="0">
+            <div class="hi-icon">
+              <svg width="32" height="32" fill="none" stroke="#0D0D0D" stroke-width="1.3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="hi-title">SEMINARS</h3>
+            <p class="hi-desc">Expert talks from industry leaders and alumni.</p>
+          </div>
+          <div class="highlight-cell" tabindex="0">
+            <div class="hi-icon">
+              <svg width="32" height="32" fill="none" stroke="#0D0D0D" stroke-width="1.3" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 class="hi-title">NETWORKING</h3>
+            <p class="hi-desc">Connect with peers, seniors and tech professionals.</p>
+          </div>
+          <div class="highlight-cell" tabindex="0">
+            <div class="hi-icon">
+              <svg width="32" height="32" fill="none" stroke="#0D0D0D" stroke-width="1.3" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="hi-title">CODING CONTESTS</h3>
+            <p class="hi-desc">Sharpen your problem-solving in live competitions.</p>
+          </div>
+          <div class="highlight-cell" tabindex="0">
+            <div class="hi-icon">
+              <svg width="32" height="32" fill="none" stroke="#0D0D0D" stroke-width="1.3" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="hi-title">PROJECTS</h3>
+            <p class="hi-desc">Collaborative builds that solve real-world problems.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Band -->
+      <div class="stats-band">
+        <div class="stat-item">
+          <span class="stat-num">200<span class="stat-plus">+</span></span>
+          <span class="stat-label">MEMBERS</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">50<span class="stat-plus">+</span></span>
+          <span class="stat-label">EVENTS</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">30<span class="stat-plus">+</span></span>
+          <span class="stat-label">PROJECTS</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">5<span class="stat-plus">+</span></span>
+          <span class="stat-label">YEARS ACTIVE</span>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner">
+        <div class="cta-heading-block">
+          <h2 class="cta-heading">JOIN THE<br><span class="blue">MOVEMENT.</span></h2>
+        </div>
+        <div class="cta-image-block" aria-hidden="true">
+          <div class="cta-neon-block">
+            <div class="neon-grid"></div>
+          </div>
+          <div class="cta-arrow-tile" aria-hidden="true">+</div>
+        </div>
+        <div class="cta-action-block">
+          <p class="cta-sub">READY TO MAKE AN IMPACT?</p>
+          <p class="cta-para">Applications open for all branches and years. Be part of something bigger.</p>
+          <a href="#contact" class="btn-pill-blue" data-page="contact" id="cta-join-btn">
+            <span class="btn-icon-circle"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            GET IN TOUCH
+          </a>
+          <div class="cta-globe" aria-hidden="true">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <ellipse cx="60" cy="60" rx="56" ry="56" stroke="#0D0D0D" stroke-width="1.5" fill="#C9FF2F"/>
+              <ellipse cx="60" cy="60" rx="28" ry="56" stroke="#0D0D0D" stroke-width="1.2" fill="none"/>
+              <ellipse cx="60" cy="60" rx="56" ry="20" stroke="#0D0D0D" stroke-width="1.2" fill="none"/>
+              <ellipse cx="60" cy="60" rx="56" ry="38" stroke="#0D0D0D" stroke-width="1" fill="none"/>
+              <line x1="4" y1="60" x2="116" y2="60" stroke="#0D0D0D" stroke-width="1.2"/>
+              <line x1="60" y1="4" x2="60" y2="116" stroke="#0D0D0D" stroke-width="1.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ PAGE: ABOUT ═══════════════════════════════════════ -->
+    <section class="page" id="about" aria-label="About page">
+
+      <div class="page-hero dark">
+        <div class="page-hero-text">
+          <span class="overline">ABOUT US *</span>
+          <h1 class="display-heading">OUR<br><span class="lime">VISION AND<br>MISSION.</span></h1>
+        </div>
+        <div class="page-hero-desc">
+          <p>The Computer Society of India (CSI) Student Chapter at our college is a student-run organization dedicated to fostering technological excellence, creativity, and community.</p>
+          <p>Founded with a vision to bridge the gap between academia and industry, we empower students to grow as technologists, leaders, and innovators.</p>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee-bar lime-text" aria-hidden="true">
+        <div class="marquee-track">
+          <span>INNOVATE * COLLABORATE * BUILD * LEARN * GROW * LEAD * INNOVATE * COLLABORATE * BUILD * LEARN * GROW * LEAD *</span>
+        </div>
+      </div>
+
+      <!-- Vision and Mission -->
+      <div class="vision-section">
+        <div class="vision-card blue-bg">
+          <div class="vc-icon" aria-hidden="true">
+            <svg width="48" height="48" fill="none" stroke="#C9FF2F" stroke-width="1.3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h2 class="vc-title lime">OUR VISION</h2>
+          <p class="vc-text">To be the premier student-driven technology community that shapes the next generation of innovators, problem-solvers, and tech leaders in our region.</p>
+        </div>
+        <div class="vision-card cream-bg">
+          <div class="vc-icon" aria-hidden="true">
+            <svg width="48" height="48" fill="none" stroke="#0B3CF5" stroke-width="1.3" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h2 class="vc-title blue">OUR MISSION</h2>
+          <p class="vc-text">To provide a platform for students to explore, experiment, and excel in computer science through hands-on events, mentorship, and meaningful projects.</p>
+        </div>
+        <div class="vision-card dark-bg">
+          <div class="vc-icon" aria-hidden="true">
+            <svg width="48" height="48" fill="none" stroke="#C9FF2F" stroke-width="1.3" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h2 class="vc-title lime">OUR VALUES</h2>
+          <p class="vc-text">Innovation. Inclusivity. Integrity. We believe every student has the potential to contribute meaningfully to the world of technology.</p>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline-section">
+        <div class="tl-header">
+          <h2 class="section-heading dark-text">OUR<br>JOURNEY *</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item left">
+            <div class="tl-badge">2019</div>
+            <div class="tl-content">
+              <h3 class="tl-title">CHAPTER FOUNDED</h3>
+              <p class="tl-text">CSI Student Chapter established at our college with 30 founding members.</p>
+            </div>
+          </div>
+          <div class="tl-item right">
+            <div class="tl-badge">2020</div>
+            <div class="tl-content">
+              <h3 class="tl-title">FIRST HACKATHON</h3>
+              <p class="tl-text">Hosted our first 24-hour hackathon with 100+ participants across 3 colleges.</p>
+            </div>
+          </div>
+          <div class="tl-item left">
+            <div class="tl-badge">2022</div>
+            <div class="tl-content">
+              <h3 class="tl-title">GREW TO 150 MEMBERS</h3>
+              <p class="tl-text">Expanded our chapter with new departments: AI/ML, Cybersecurity, and Web Dev.</p>
+            </div>
+          </div>
+          <div class="tl-item right">
+            <div class="tl-badge">2024</div>
+            <div class="tl-content">
+              <h3 class="tl-title">NATIONAL RECOGNITION</h3>
+              <p class="tl-text">Awarded Best Student Chapter at CSI National Convention 2024.</p>
+            </div>
+          </div>
+          <div class="tl-item left">
+            <div class="tl-badge">2025</div>
+            <div class="tl-content">
+              <h3 class="tl-title">200+ MEMBERS</h3>
+              <p class="tl-text">Reached a milestone of 200+ active members and launched our mentorship program.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSI Info -->
+      <div class="csi-info-band">
+        <div class="csi-info-text">
+          <span class="overline lime">ABOUT CSI INDIA</span>
+          <h2 class="section-heading">PART OF A<br><span class="lime">BIGGER NETWORK.</span></h2>
+          <p>The Computer Society of India is the first and largest body of computer professionals in India, founded in 1965. As an affiliated student chapter, we connect our members to a national network of 100,000+ professionals, industry resources, and opportunities.</p>
+          <a href="https://www.csi-india.org" target="_blank" rel="noopener" class="btn-lime" id="csi-link-btn">VISIT CSI INDIA</a>
+        </div>
+        <div class="csi-info-visual" aria-hidden="true">
+          <div class="big-number">65+</div>
+          <p class="big-number-label">YEARS OF EXCELLENCE</p>
+          <div class="asterisk-watermark">✱</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ PAGE: EVENTS ═══════════════════════════════════════ -->
+    <section class="page" id="events" aria-label="Events page">
+
+      <div class="page-hero cream">
+        <div class="page-hero-text">
+          <span class="overline blue">EVENTS *</span>
+          <h1 class="display-heading dark-text">UPCOMING<br><span class="blue">EVENTS AND<br>ACTIVITIES.</span></h1>
+        </div>
+        <div class="page-hero-desc dark-desc">
+          <p>From hackathons and workshops to guest lectures and competitions — there is always something happening at CSI.</p>
+          <div class="event-filter-row">
+            <button class="filter-btn active" data-filter="all" id="filter-all">ALL</button>
+            <button class="filter-btn" data-filter="workshop" id="filter-workshop">WORKSHOP</button>
+            <button class="filter-btn" data-filter="hackathon" id="filter-hackathon">HACKATHON</button>
+            <button class="filter-btn" data-filter="seminar" id="filter-seminar">SEMINAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="events-grid" id="eventsGrid">
+        <article class="event-card" data-type="hackathon" tabindex="0">
+          <div class="event-num-badge">01</div>
+          <div class="event-img" style="background:#0B3CF5;">
+            <div class="event-img-inner">
+              <svg width="60" height="60" fill="none" stroke="#C9FF2F" stroke-width="1" viewBox="0 0 60 60"><polyline points="16 40 28 20 36 32 42 24 52 40"/><rect x="4" y="4" width="52" height="52" rx="2"/></svg>
+            </div>
+          </div>
+          <div class="event-info">
+            <span class="event-tag">HACKATHON</span>
+            <h3 class="event-title">TECHATHON 2025</h3>
+            <p class="event-desc">48-hour national-level hackathon. Build real solutions for real problems with teams of 2 to 4.</p>
+            <div class="event-meta">
+              <span class="event-date">DEC 15-16, 2025</span>
+              <span class="event-seats">200 SEATS</span>
+            </div>
+            <a href="#contact" class="btn-lime-sm" data-page="contact">REGISTER</a>
+          </div>
+        </article>
+
+        <article class="event-card" data-type="workshop" tabindex="0">
+          <div class="event-num-badge">02</div>
+          <div class="event-img" style="background:#1A1A1A;">
+            <div class="event-img-inner">
+              <svg width="60" height="60" fill="none" stroke="#C9FF2F" stroke-width="1" viewBox="0 0 60 60"><path d="M10 20h40M10 30h28M10 40h20"/><rect x="4" y="8" width="52" height="44" rx="2"/></svg>
+            </div>
+          </div>
+          <div class="event-info">
+            <span class="event-tag">WORKSHOP</span>
+            <h3 class="event-title">AI/ML BOOTCAMP</h3>
+            <p class="event-desc">3-day intensive workshop covering Python, TensorFlow, and real ML project deployment.</p>
+            <div class="event-meta">
+              <span class="event-date">NOV 20-22, 2025</span>
+              <span class="event-seats">60 SEATS</span>
+            </div>
+            <a href="#contact" class="btn-lime-sm" data-page="contact">REGISTER</a>
+          </div>
+        </article>
+
+        <article class="event-card" data-type="seminar" tabindex="0">
+          <div class="event-num-badge">03</div>
+          <div class="event-img" style="background:#C9FF2F;">
+            <div class="event-img-inner">
+              <svg width="60" height="60" fill="none" stroke="#0D0D0D" stroke-width="1" viewBox="0 0 60 60"><circle cx="30" cy="20" r="10"/><path d="M10 50c0-11 9-20 20-20s20 9 20 20"/></svg>
+            </div>
+          </div>
+          <div class="event-info">
+            <span class="event-tag">SEMINAR</span>
+            <h3 class="event-title">FUTURE OF TECH TALK</h3>
+            <p class="event-desc">Industry experts discuss the trajectory of AI, Blockchain, and Quantum Computing.</p>
+            <div class="event-meta">
+              <span class="event-date">NOV 5, 2025</span>
+              <span class="event-seats">OPEN</span>
+            </div>
+            <a href="#contact" class="btn-lime-sm" data-page="contact">REGISTER</a>
+          </div>
+        </article>
+
+        <article class="event-card" data-type="workshop" tabindex="0">
+          <div class="event-num-badge">04</div>
+          <div class="event-img" style="background:#0B3CF5;">
+            <div class="event-img-inner">
+              <svg width="60" height="60" fill="none" stroke="#fff" stroke-width="1" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><circle cx="30" cy="30" r="13"/><line x1="4" y1="30" x2="56" y2="30"/><line x1="30" y1="4" x2="30" y2="56"/></svg>
+            </div>
+          </div>
+          <div class="event-info">
+            <span class="event-tag">WORKSHOP</span>
+            <h3 class="event-title">WEB DEV WORKSHOP</h3>
+            <p class="event-desc">Full-stack web development from HTML/CSS to React and Node.js in one intensive day.</p>
+            <div class="event-meta">
+              <span class="event-date">OCT 28, 2025</span>
+              <span class="event-seats">50 SEATS</span>
+            </div>
+            <a href="#contact" class="btn-lime-sm" data-page="contact">REGISTER</a>
+          </div>
+        </article>
+
+        <article class="event-card" data-type="hackathon" tabindex="0">
+          <div class="event-num-badge">05</div>
+          <div class="event-img" style="background:#1A1A1A;">
+            <div class="event-img-inner">
+              <svg width="60" height="60" fill="none" stroke="#C9FF2F" stroke-width="1" viewBox="0 0 60 60"><polyline points="8 16 30 4 52 16 52 44 30 56 8 44 8 16"/><line x1="30" y1="4" x2="30" y2="56"/><line x1="8" y1="30" x2="52" y2="30"/></svg>
+            </div>
+          </div>
+          <div class="event-info">
+            <span class="event-tag">HACKATHON</span>
+            <h3 class="event-title">CODE SPRINT IV</h3>
+            <p class="event-desc">Intra-college competitive coding marathon. Win prizes and internship opportunities.</p>
+            <div class="event-meta">
+              <span class="event-date">JAN 10, 2026</span>
+              <span class="event-seats">150 SEATS</span>
+            </div>
+            <a href="#contact" class="btn-lime-sm" data-page="contact">REGISTER</a>
+          </div>
+        </article>
+
+        <article class="event-card" data-type="seminar" tabindex="0">
+          <div class="event-num-badge">06</div>
+          <div class="event-img" style="background:#C9FF2F;">
+            <div class="event-img-inner">
+              <svg width="60" height="60" fill="none" stroke="#0D0D0D" stroke-width="1" viewBox="0 0 60 60"><rect x="8" y="16" width="44" height="28" rx="2"/><path d="M20 44v8M40 44v8M12 52h36"/></svg>
+            </div>
+          </div>
+          <div class="event-info">
+            <span class="event-tag">SEMINAR</span>
+            <h3 class="event-title">CYBERSECURITY 101</h3>
+            <p class="event-desc">Ethical hacking, penetration testing, and cybersecurity best practices for beginners.</p>
+            <div class="event-meta">
+              <span class="event-date">FEB 3, 2026</span>
+              <span class="event-seats">80 SEATS</span>
+            </div>
+            <a href="#contact" class="btn-lime-sm" data-page="contact">REGISTER</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Past Events -->
+      <div class="past-events-band">
+        <h2 class="section-heading lime">PAST HIGHLIGHTS *</h2>
+        <div class="past-events-row">
+          <div class="past-event-item">
+            <span class="pe-year">2024</span>
+            <span class="pe-name">TECHFEST HACKATHON - 300 PARTICIPANTS</span>
+          </div>
+          <div class="past-event-item">
+            <span class="pe-year">2024</span>
+            <span class="pe-name">CLOUD COMPUTING MASTERCLASS</span>
+          </div>
+          <div class="past-event-item">
+            <span class="pe-year">2023</span>
+            <span class="pe-name">APP DEVELOPMENT BOOTCAMP</span>
+          </div>
+          <div class="past-event-item">
+            <span class="pe-year">2023</span>
+            <span class="pe-name">DATA SCIENCE SYMPOSIUM</span>
+          </div>
+          <div class="past-event-item">
+            <span class="pe-year">2022</span>
+            <span class="pe-name">OPEN SOURCE CONTRIBUTION DRIVE</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ PAGE: TEAM ═══════════════════════════════════════ -->
+    <section class="page" id="team" aria-label="Team page">
+
+      <div class="page-hero dark">
+        <div class="page-hero-text">
+          <span class="overline">TEAM *</span>
+          <h1 class="display-heading">MEET THE<br><span class="lime">BUILDERS.</span></h1>
+        </div>
+        <div class="page-hero-desc">
+          <p>Behind every event, initiative, and innovation is a passionate team of students working tirelessly to make CSI the best chapter in the country.</p>
+        </div>
+      </div>
+
+      <!-- Core Team -->
+      <div class="team-section">
+        <div class="team-label">
+          <span class="overline lime">LEADERSHIP</span>
+          <h2 class="section-heading dark-text">CORE<br>TEAM *</h2>
+        </div>
+        <div class="team-grid" id="teamGrid">
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#0B3CF5,#061A8A);">
+              <span class="avatar-letter">A</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">01</span>
+              <h3 class="team-name">ARYAN SHARMA</h3>
+              <p class="team-role">PRESIDENT</p>
+              <p class="team-dept">COMPUTER SCIENCE, 4TH YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#C9FF2F,#B6F000);">
+              <span class="avatar-letter" style="color:#0D0D0D">P</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">02</span>
+              <h3 class="team-name">PRIYA MEHTA</h3>
+              <p class="team-role">VICE PRESIDENT</p>
+              <p class="team-dept">INFORMATION TECHNOLOGY, 3RD YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#1A1A1A,#0E0E0E);">
+              <span class="avatar-letter">R</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">03</span>
+              <h3 class="team-name">RAHUL PATEL</h3>
+              <p class="team-role">TECHNICAL HEAD</p>
+              <p class="team-dept">COMPUTER SCIENCE, 3RD YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#0B3CF5,#4A6BFF);">
+              <span class="avatar-letter">S</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">04</span>
+              <h3 class="team-name">SNEHA GUPTA</h3>
+              <p class="team-role">EVENTS COORDINATOR</p>
+              <p class="team-dept">ELECTRONICS, 3RD YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#C9FF2F,#0B3CF5);">
+              <span class="avatar-letter">K</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">05</span>
+              <h3 class="team-name">KARAN JOSHI</h3>
+              <p class="team-role">DESIGN HEAD</p>
+              <p class="team-dept">COMPUTER SCIENCE, 2ND YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#1A1A1A,#0B3CF5);">
+              <span class="avatar-letter">N</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">06</span>
+              <h3 class="team-name">NISHA VERMA</h3>
+              <p class="team-role">OUTREACH HEAD</p>
+              <p class="team-dept">INFORMATION TECHNOLOGY, 2ND YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#0B3CF5,#C9FF2F);">
+              <span class="avatar-letter">D</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">07</span>
+              <h3 class="team-name">DEV AGARWAL</h3>
+              <p class="team-role">SECRETARY</p>
+              <p class="team-dept">COMPUTER SCIENCE, 2ND YEAR</p>
+            </div>
+          </div>
+          <div class="team-card" tabindex="0">
+            <div class="team-avatar" style="background: linear-gradient(135deg,#C9FF2F,#1A1A1A);">
+              <span class="avatar-letter" style="color:#0D0D0D">M</span>
+            </div>
+            <div class="team-info">
+              <span class="team-num-badge">08</span>
+              <h3 class="team-name">MAYA PILLAI</h3>
+              <p class="team-role">TREASURER</p>
+              <p class="team-dept">ELECTRONICS, 2ND YEAR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Faculty Advisors -->
+      <div class="advisors-band">
+        <h2 class="section-heading lime">FACULTY<br>ADVISORS *</h2>
+        <div class="advisors-row">
+          <div class="advisor-card">
+            <div class="advisor-avatar">
+              <svg width="40" height="40" fill="none" stroke="#C9FF2F" stroke-width="1.2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="advisor-name">DR. AMIT SINGH</h3>
+            <p class="advisor-role">FACULTY COORDINATOR</p>
+            <p class="advisor-dept">DEPT. OF COMPUTER SCIENCE</p>
+          </div>
+          <div class="advisor-card">
+            <div class="advisor-avatar">
+              <svg width="40" height="40" fill="none" stroke="#C9FF2F" stroke-width="1.2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="advisor-name">PROF. REKHA NAIR</h3>
+            <p class="advisor-role">FACULTY ADVISOR</p>
+            <p class="advisor-dept">DEPT. OF INFORMATION TECHNOLOGY</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ PAGE: GALLERY ═══════════════════════════════════════ -->
+    <section class="page" id="gallery" aria-label="Gallery page">
+
+      <div class="page-hero cream">
+        <div class="page-hero-text">
+          <span class="overline blue">GALLERY *</span>
+          <h1 class="display-heading dark-text">MOMENTS<br><span class="blue">CAPTURED.</span></h1>
+        </div>
+        <div class="page-hero-desc dark-desc">
+          <p>A visual story of our events, achievements, and the incredible community we have built together.</p>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item tall" tabindex="0" style="background: linear-gradient(135deg,#0B3CF5 0%,#061A8A 100%);">
+          <div class="gallery-overlay">
+            <span class="gallery-label">TECHATHON 2024 - OPENING CEREMONY</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 300" fill="none"><circle cx="100" cy="150" r="80" stroke="#C9FF2F" stroke-width="1"/><circle cx="100" cy="150" r="50" stroke="#C9FF2F" stroke-width="1"/><text x="100" y="160" text-anchor="middle" fill="#C9FF2F" font-size="40" font-family="Arial">*</text></svg>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" style="background: #C9FF2F;">
+          <div class="gallery-overlay dark-overlay">
+            <span class="gallery-label dark-label">WORKSHOP - AI/ML 2024</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none"><rect x="20" y="20" width="160" height="160" stroke="#0D0D0D" stroke-width="1.5" fill="none"/><path d="M20 100 Q60 60 100 100 Q140 140 180 100" stroke="#0D0D0D" stroke-width="2" fill="none"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" style="background: #1A1A1A;">
+          <div class="gallery-overlay">
+            <span class="gallery-label">CODE SPRINT III</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none"><text x="40" y="80" fill="#C9FF2F" font-size="18" font-family="monospace">01101</text><text x="60" y="110" fill="#4A6BFF" font-size="18" font-family="monospace">10011</text><text x="30" y="140" fill="#C9FF2F" font-size="18" font-family="monospace">11010</text></svg>
+          </div>
+        </div>
+        <div class="gallery-item wide" tabindex="0" style="background: linear-gradient(90deg,#0B3CF5,#C9FF2F);">
+          <div class="gallery-overlay">
+            <span class="gallery-label">ANNUAL TECH FEST 2024</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none"><text x="200" y="120" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="80" font-family="Arial" font-weight="bold">CSI</text></svg>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" style="background: #0E0E0E;">
+          <div class="gallery-overlay">
+            <span class="gallery-label">CYBERSECURITY SEMINAR</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none"><path d="M100 20 L160 50 L160 110 Q160 160 100 180 Q40 160 40 110 L40 50 Z" stroke="#C9FF2F" stroke-width="1.5" fill="none"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item tall" tabindex="0" style="background: #C9FF2F;">
+          <div class="gallery-overlay dark-overlay">
+            <span class="gallery-label dark-label">TEAM BUILDING DAY 2024</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 300" fill="none"><circle cx="60" cy="80" r="25" stroke="#0D0D0D" stroke-width="1.5" fill="none"/><circle cx="140" cy="80" r="25" stroke="#0D0D0D" stroke-width="1.5" fill="none"/><circle cx="100" cy="200" r="25" stroke="#0D0D0D" stroke-width="1.5" fill="none"/><line x1="60" y1="80" x2="140" y2="80" stroke="#0D0D0D" stroke-width="1"/><line x1="60" y1="80" x2="100" y2="200" stroke="#0D0D0D" stroke-width="1"/><line x1="140" y1="80" x2="100" y2="200" stroke="#0D0D0D" stroke-width="1"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" style="background: linear-gradient(135deg,#0B3CF5,#C9FF2F);">
+          <div class="gallery-overlay">
+            <span class="gallery-label">AWARD CEREMONY 2024</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none"><polygon points="100,20 115,70 165,70 125,100 140,150 100,120 60,150 75,100 35,70 85,70" stroke="#fff" stroke-width="1.5" fill="none"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" style="background: #1A1A1A;">
+          <div class="gallery-overlay">
+            <span class="gallery-label">NETWORKING MIXER</span>
+          </div>
+          <div class="gallery-art" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none"><circle cx="60" cy="60" r="15" stroke="#4A6BFF" stroke-width="1.5" fill="none"/><circle cx="140" cy="60" r="15" stroke="#4A6BFF" stroke-width="1.5" fill="none"/><circle cx="100" cy="140" r="15" stroke="#C9FF2F" stroke-width="1.5" fill="none"/><line x1="60" y1="60" x2="140" y2="60" stroke="#4A6BFF" stroke-width="1"/><line x1="60" y1="60" x2="100" y2="140" stroke="#C9FF2F" stroke-width="1"/><line x1="140" y1="60" x2="100" y2="140" stroke="#C9FF2F" stroke-width="1"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ PAGE: BLOGS ═══════════════════════════════════════ -->
+    <section class="page" id="blogs" aria-label="Blogs page">
+
+      <div class="page-hero dark">
+        <div class="page-hero-text">
+          <span class="overline">JOURNAL *</span>
+          <h1 class="display-heading">THOUGHTS AND<br><span class="lime">INSIGHTS.</span></h1>
+        </div>
+        <div class="page-hero-desc">
+          <p>Articles, tutorials, and reflections from our members on technology, career, and everything in between.</p>
+        </div>
+      </div>
+
+      <!-- Featured Blog -->
+      <div class="featured-blog">
+        <div class="fb-label">
+          <span class="overline lime">FEATURED</span>
+        </div>
+        <div class="fb-content">
+          <div class="fb-meta">
+            <span class="blog-tag">AI/ML</span>
+            <span class="blog-date">OCT 1, 2025</span>
+          </div>
+          <h2 class="fb-title">THE RISE OF LARGE LANGUAGE MODELS: WHAT EVERY CS STUDENT NEEDS TO KNOW</h2>
+          <p class="fb-excerpt">A deep-dive into how LLMs work, why they matter, and how you as a student can start experimenting with them today using free tools and open-source models.</p>
+          <div class="fb-author">
+            <div class="author-dot" style="background:#0B3CF5;"></div>
+            <span>ARYAN SHARMA - PRESIDENT, CSI</span>
+          </div>
+          <button class="btn-pill-blue sm" id="featured-read-btn">
+            <span class="btn-icon-circle sm"><svg width="14" height="14" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            READ ARTICLE
+          </button>
+        </div>
+        <div class="fb-visual" aria-hidden="true">
+          <div class="fb-art-block" style="background:#0B3CF5;">
+            <span style="font-size:80px;line-height:1;opacity:0.3;">*</span>
+            <div class="fb-art-text">LLM</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blogs-grid">
+        <article class="blog-card" tabindex="0">
+          <div class="blog-card-top" style="background:#C9FF2F;">
+            <span class="blog-card-icon" style="color:#0D0D0D;font-size:36px;">&#9649;</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="bc-meta">
+              <span class="blog-tag sm dark">WEB DEV</span>
+              <span class="blog-date sm">SEP 15, 2025</span>
+            </div>
+            <h3 class="bc-title">BUILDING BLAZING-FAST WEBSITES WITH VITE AND REACT</h3>
+            <p class="bc-excerpt">Modernize your frontend workflow with the fastest build tool in the ecosystem.</p>
+            <div class="bc-footer">
+              <span class="bc-author">KARAN JOSHI</span>
+              <span class="bc-read">5 MIN READ</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" tabindex="0">
+          <div class="blog-card-top" style="background:#1A1A1A;">
+            <span class="blog-card-icon" style="color:#C9FF2F;font-size:36px;">&#9649;</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="bc-meta">
+              <span class="blog-tag sm dark">SECURITY</span>
+              <span class="blog-date sm">SEP 5, 2025</span>
+            </div>
+            <h3 class="bc-title">WHY EVERY DEVELOPER SHOULD KNOW THE BASICS OF CYBERSECURITY</h3>
+            <p class="bc-excerpt">Security is not optional. Here is how to start thinking like an attacker to defend better.</p>
+            <div class="bc-footer">
+              <span class="bc-author">PRIYA MEHTA</span>
+              <span class="bc-read">7 MIN READ</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" tabindex="0">
+          <div class="blog-card-top" style="background:#0B3CF5;">
+            <span class="blog-card-icon" style="color:#fff;font-size:36px;">&#9649;</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="bc-meta">
+              <span class="blog-tag sm dark">CAREER</span>
+              <span class="blog-date sm">AUG 20, 2025</span>
+            </div>
+            <h3 class="bc-title">HOW TO CRACK YOUR FIRST TECH INTERNSHIP AS A SOPHOMORE</h3>
+            <p class="bc-excerpt">Practical advice on resume building, DSA prep, and acing behavioral interviews.</p>
+            <div class="bc-footer">
+              <span class="bc-author">RAHUL PATEL</span>
+              <span class="bc-read">8 MIN READ</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" tabindex="0">
+          <div class="blog-card-top" style="background:#C9FF2F;">
+            <span class="blog-card-icon" style="color:#0D0D0D;font-size:36px;">&#9649;</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="bc-meta">
+              <span class="blog-tag sm dark">OPEN SOURCE</span>
+              <span class="blog-date sm">AUG 10, 2025</span>
+            </div>
+            <h3 class="bc-title">GETTING STARTED WITH OPEN SOURCE: YOUR FIRST PULL REQUEST</h3>
+            <p class="bc-excerpt">A step-by-step guide to making your first meaningful contribution to an open source project.</p>
+            <div class="bc-footer">
+              <span class="bc-author">SNEHA GUPTA</span>
+              <span class="bc-read">6 MIN READ</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" tabindex="0">
+          <div class="blog-card-top" style="background:#0E0E0E;">
+            <span class="blog-card-icon" style="color:#4A6BFF;font-size:36px;">&#9649;</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="bc-meta">
+              <span class="blog-tag sm dark">DATA</span>
+              <span class="blog-date sm">JUL 25, 2025</span>
+            </div>
+            <h3 class="bc-title">PANDAS TO POLARS: SPEED UP YOUR DATA ANALYSIS 10X</h3>
+            <p class="bc-excerpt">Why the new Rust-based dataframe library is taking data science by storm.</p>
+            <div class="bc-footer">
+              <span class="bc-author">DEV AGARWAL</span>
+              <span class="bc-read">5 MIN READ</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" tabindex="0">
+          <div class="blog-card-top" style="background:#0B3CF5;">
+            <span class="blog-card-icon" style="color:#C9FF2F;font-size:36px;">&#9649;</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="bc-meta">
+              <span class="blog-tag sm dark">CLOUD</span>
+              <span class="blog-date sm">JUL 12, 2025</span>
+            </div>
+            <h3 class="bc-title">AWS, GCP, OR AZURE? CHOOSING YOUR CLOUD PLATFORM AS A STUDENT</h3>
+            <p class="bc-excerpt">An honest comparison to help you pick the right cloud to start learning for free.</p>
+            <div class="bc-footer">
+              <span class="bc-author">NISHA VERMA</span>
+              <span class="bc-read">6 MIN READ</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Write for Us -->
+      <div class="write-cta-band">
+        <div class="wc-text">
+          <h2 class="section-heading dark-text">WANT TO<br><span class="blue">WRITE FOR US?</span></h2>
+          <p>Share your knowledge, experiences, and insights with the CSI community. We welcome articles on technology, career advice, project showcases, and more.</p>
+          <a href="#contact" class="btn-pill-blue" data-page="contact" id="write-cta-btn">
+            <span class="btn-icon-circle"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            SUBMIT YOUR ARTICLE
+          </a>
+        </div>
+        <div class="wc-visual" aria-hidden="true">
+          <div class="wc-number">✱</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ PAGE: CONTACT ═══════════════════════════════════════ -->
+    <section class="page" id="contact" aria-label="Contact page">
+
+      <div class="page-hero dark">
+        <div class="page-hero-text">
+          <span class="overline">CONTACT *</span>
+          <h1 class="display-heading">LET'S<br><span class="lime">CONNECT.</span></h1>
+        </div>
+        <div class="page-hero-desc">
+          <p>Questions, collaborations, sponsorships, or just want to say hi. We would love to hear from you.</p>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Form -->
+        <div class="contact-form-block">
+          <h2 class="contact-form-heading">SEND US A MESSAGE</h2>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">YOUR NAME</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="FULL NAME" required autocomplete="name"/>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">EMAIL ADDRESS</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="YOUR@EMAIL.COM" required autocomplete="email"/>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">SUBJECT</label>
+              <select id="subject" name="subject" class="form-input form-select" required>
+                <option value="">SELECT A TOPIC</option>
+                <option value="membership">MEMBERSHIP INQUIRY</option>
+                <option value="event">EVENT COLLABORATION</option>
+                <option value="sponsorship">SPONSORSHIP</option>
+                <option value="blog">BLOG SUBMISSION</option>
+                <option value="other">OTHER</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">MESSAGE</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="TELL US MORE..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-pill-blue submit-btn" id="submitBtn">
+              <span class="btn-icon-circle"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>
+              SEND MESSAGE
+            </button>
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              MESSAGE SENT! WE WILL GET BACK TO YOU SOON.
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-block">
+          <div class="ci-item">
+            <div class="ci-icon" aria-hidden="true">
+              <svg width="24" height="24" fill="none" stroke="#C9FF2F" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="ci-label">EMAIL</p>
+              <p class="ci-value">csi@college.edu.in</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon" aria-hidden="true">
+              <svg width="24" height="24" fill="none" stroke="#C9FF2F" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="ci-label">LOCATION</p>
+              <p class="ci-value">COMPUTER SCIENCE DEPT,<br>COLLEGE CAMPUS, CITY</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon" aria-hidden="true">
+              <svg width="24" height="24" fill="none" stroke="#C9FF2F" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div>
+              <p class="ci-label">OFFICE HOURS</p>
+              <p class="ci-value">MON-FRI, 2 PM - 5 PM<br>ROOM 301, CS BLOCK</p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-block">
+            <p class="ci-label">FOLLOW US</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                INSTAGRAM
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn" id="social-linkedin">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                LINKEDIN
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub" id="social-github">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                GITHUB
+              </a>
+            </div>
+          </div>
+
+          <!-- Map Block -->
+          <div class="map-placeholder" aria-label="Map location placeholder">
+            <div class="map-grid-bg">
+              <svg width="100%" height="100%" viewBox="0 0 300 200" fill="none">
+                <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#C9FF2F" stroke-width="0.5"/></pattern></defs>
+                <rect width="300" height="200" fill="url(#grid)"/>
+                <circle cx="150" cy="100" r="10" fill="#0B3CF5"/>
+                <circle cx="150" cy="100" r="4" fill="#C9FF2F"/>
+                <line x1="150" y1="100" x2="150" y2="80" stroke="#C9FF2F" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <span class="map-label">CSI - COLLEGE CAMPUS</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-asterisk">✱</span>
+          <span class="footer-club-name">CSI</span>
+          <p class="footer-tagline">COMPUTER SOCIETY OF INDIA<br>STUDENT CHAPTER</p>
+        </div>
+        <div class="footer-links-col">
+          <p class="footer-col-label">NAVIGATE</p>
+          <a href="#home" class="footer-link" data-page="home">HOME</a>
+          <a href="#about" class="footer-link" data-page="about">ABOUT</a>
+          <a href="#events" class="footer-link" data-page="events">EVENTS</a>
+          <a href="#team" class="footer-link" data-page="team">TEAM</a>
+        </div>
+        <div class="footer-grid-visual" aria-hidden="true">
+          <svg width="100%" height="100%" viewBox="0 0 280 160" fill="none" preserveAspectRatio="xMidYMid meet">
+            <defs><radialGradient id="gv" cx="50%" cy="100%" r="80%"><stop offset="0%" stop-color="#C9FF2F" stop-opacity="0.8"/><stop offset="100%" stop-color="#C9FF2F" stop-opacity="0"/></radialGradient></defs>
+            <line x1="140" y1="160" x2="0" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="140" y1="160" x2="40" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="140" y1="160" x2="80" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="140" y1="160" x2="140" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="140" y1="160" x2="200" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="140" y1="160" x2="240" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="140" y1="160" x2="280" y2="0" stroke="url(#gv)" stroke-width="0.8"/>
+            <line x1="0" y1="40" x2="280" y2="40" stroke="#C9FF2F" stroke-width="0.5" stroke-opacity="0.4"/>
+            <line x1="0" y1="80" x2="280" y2="80" stroke="#C9FF2F" stroke-width="0.5" stroke-opacity="0.3"/>
+            <line x1="0" y1="120" x2="280" y2="120" stroke="#C9FF2F" stroke-width="0.5" stroke-opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="footer-links-col">
+          <p class="footer-col-label">MORE</p>
+          <a href="#gallery" class="footer-link" data-page="gallery">GALLERY</a>
+          <a href="#blogs" class="footer-link" data-page="blogs">BLOGS</a>
+          <a href="#contact" class="footer-link" data-page="contact">CONTACT</a>
+        </div>
+        <div class="footer-contact-col">
+          <p class="footer-col-label">CONTACT</p>
+          <p class="footer-contact-item">csi@college.edu.in</p>
+          <p class="footer-contact-item">CS DEPT, COLLEGE CAMPUS</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Instagram" id="footer-instagram">IG</a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn" id="footer-linkedin">LI</a>
+            <a href="#" class="footer-social-icon" aria-label="GitHub" id="footer-github">GH</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">2025 CSI STUDENT CHAPTER. ALL RIGHTS RESERVED.</span>
+        <span class="footer-made">MADE WITH ✱ BY CSI TEAM</span>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

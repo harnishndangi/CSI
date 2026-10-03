@@ -1,0 +1,876 @@
+{
+  "metadata": {
+    "designName": "Neo-Brutalist Designer Portfolio - 'Design That Breaks The Grid'",
+    "designStyle": "Neo-brutalist / editorial / Swiss-grid-meets-acid. Ultra-condensed heavy display type, monospace body, electric-blue + acid-lime + black + warm off-white, duotone photography, thin technical line-work (crosshairs, wireframe globes, grids), asterisk motif, bento-like full-bleed horizontal bands.",
+    "referenceType": "website-screenshot",
+    "visualAccuracyTarget": "high",
+    "referenceDimensions": { "width": 900, "height": 1600, "unit": "px", "note": "Screenshot is a downscaled full-page capture. Desktop values below are scaled to a 1440px design width (scale factor 1.6) and are approximate.", "inferred": true },
+    "motif": "Six-armed asterisk (✱) used as logo, separator, bullet, badge, stamp and watermark",
+    "pageSectionOrder": ["navbar", "hero", "marquee-ticker", "selected-projects", "what-i-do-best", "kind-words", "cta-banner", "footer"]
+  },
+
+  "designSystem": {
+    "colors": {
+      "background": "#F6F3EC",
+      "backgroundAlt": "#FFFFFF",
+      "surfaceDark": "#1A1A1A",
+      "surfaceDarkDeep": "#0E0E0E",
+      "surfaceCard": "#F6F3EC",
+      "surfaceBlue": "#0B3CF5",
+      "surfaceLime": "#C9FF2F",
+      "textPrimary": "#0D0D0D",
+      "textSecondary": "#2A2A2A",
+      "textMuted": "#6B6B66",
+      "textOnDark": "#F6F3EC",
+      "textOnDarkMuted": "#BDBDB5",
+      "textOnBlue": "#F6F3EC",
+      "accentBlue": "#0B3CF5",
+      "accentBlueLight": "#4A6BFF",
+      "accentLime": "#C9FF2F",
+      "accentLimeDeep": "#B6F000",
+      "border": "#0D0D0D",
+      "borderSoft": "#CFCBC0",
+      "borderOnDark": "#3A3A3A",
+      "buttonPrimaryBg": "#0B3CF5",
+      "buttonPrimaryText": "#FFFFFF",
+      "buttonLimeBg": "#C9FF2F",
+      "buttonLimeText": "#0D0D0D",
+      "hover": { "bluePrimary": "#0A2FC4", "limeButton": "#DBFF6B", "linkUnderline": "#0B3CF5" },
+      "statusDot": "#0B3CF5",
+      "gradients": {
+        "projectCardBlue": "linear-gradient(160deg,#0B3CF5 0%,#061A8A 70%,#030A3D 100%)",
+        "ctaNeonPhoto": "radial-gradient(circle at 30% 40%,#2A55FF 0%,#0A1A8C 45%,#020624 100%)",
+        "heroPhotoDuotone": "duotone(shadows:#0D0D0D, highlights:#C9FF2F)"
+      },
+      "overlays": { "none": "No dark overlays on imagery; duotone/color treatment is baked into the image", "cardCaptionBg": "#F6F3EC" },
+      "inferred": true
+    },
+
+    "typography": {
+      "fontFamilies": {
+        "display": { "family": "'Anton', 'Bebas Neue', 'Oswald', 'Impact', sans-serif", "note": "Closest free equivalent to an ultra-condensed heavy grotesque (looks like Druk/Anton). Uppercase only.", "inferred": true },
+        "body": { "family": "'Space Mono', 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace", "note": "All body, nav, labels, buttons, captions are monospace uppercase or sentence case.", "inferred": true }
+      },
+      "display": { "font": "display", "size": "clamp(96px, 12.4vw, 184px)", "weight": 400, "lineHeight": 0.88, "letterSpacing": "-0.01em", "textTransform": "uppercase", "color": "#0D0D0D", "emphasisColor": "#0B3CF5" },
+      "h1": { "font": "display", "size": "clamp(96px, 12.4vw, 184px)", "weight": 400, "lineHeight": 0.88, "letterSpacing": "-0.01em", "textTransform": "uppercase" },
+      "h2": { "font": "display", "size": "clamp(56px, 6.4vw, 96px)", "weight": 400, "lineHeight": 0.92, "letterSpacing": "-0.005em", "textTransform": "uppercase", "usage": "LET'S CREATE SOMETHING BOLD." },
+      "h3": { "font": "display", "size": "clamp(40px, 3.8vw, 56px)", "weight": 400, "lineHeight": 0.95, "letterSpacing": "0", "textTransform": "uppercase", "usage": "SELECTED PROJECTS, WHAT I DO BEST, KIND WORDS" },
+      "h4": { "font": "body", "size": "16px", "weight": 700, "lineHeight": 1.3, "letterSpacing": "0.02em", "textTransform": "uppercase", "usage": "HAVE A PROJECT IN MIND?" },
+      "cardTitle": { "font": "body", "size": "13px", "weight": 700, "lineHeight": 1.3, "letterSpacing": "0.04em", "textTransform": "uppercase" },
+      "body": { "font": "body", "size": "14px", "weight": 400, "lineHeight": 1.55, "letterSpacing": "0.02em", "textTransform": "uppercase (hero intro) / none (descriptions)" },
+      "bodySmall": { "font": "body", "size": "12px", "weight": 400, "lineHeight": 1.6, "letterSpacing": "0.01em", "textTransform": "none" },
+      "caption": { "font": "body", "size": "10px", "weight": 400, "lineHeight": 1.4, "letterSpacing": "0.08em", "textTransform": "uppercase" },
+      "nav": { "font": "body", "size": "12px", "weight": 700, "lineHeight": 1, "letterSpacing": "0.08em", "textTransform": "uppercase" },
+      "button": { "font": "body", "size": "12px", "weight": 700, "lineHeight": 1, "letterSpacing": "0.08em", "textTransform": "uppercase" },
+      "marquee": { "font": "body", "size": "14px", "weight": 700, "lineHeight": 1, "letterSpacing": "0.06em", "textTransform": "uppercase" },
+      "quote": { "font": "body", "size": "13px", "weight": 400, "lineHeight": 1.6, "letterSpacing": "0.01em", "textTransform": "none" },
+      "quoteAuthor": { "font": "body", "size": "11px", "weight": 400, "letterSpacing": "0.06em", "textTransform": "uppercase" },
+      "footerLabel": { "font": "body", "size": "12px", "weight": 700, "letterSpacing": "0.1em", "textTransform": "uppercase", "color": "#C9FF2F" },
+      "notes": "Sizes are scaled estimates for 1440px canvas. inferred: true",
+      "inferred": true
+    },
+
+    "spacing": {
+      "scale": { "0": "0", "1": "4px", "2": "8px", "3": "12px", "4": "16px", "5": "24px", "6": "32px", "7": "48px", "8": "64px", "9": "96px", "10": "128px" },
+      "navbarPaddingX": "32px",
+      "containerPadding": "56px",
+      "heroPadding": "56px 56px 48px 56px",
+      "sectionPaddingY": "64px",
+      "cardPadding": "16px",
+      "gridGap": "8px",
+      "elementGap": "16px",
+      "buttonPadding": "10px 28px 10px 10px",
+      "mobile": { "containerPadding": "20px", "sectionPaddingY": "48px", "gridGap": "12px" },
+      "inferred": true
+    },
+
+    "radius": {
+      "none": "0px",
+      "button": "999px",
+      "iconButton": "50%",
+      "card": "0px",
+      "image": "0px",
+      "badge": "0px",
+      "numberBadge": "0px",
+      "input": "0px",
+      "modal": "0px",
+      "note": "Design is hard-edged: everything is square except pills (buttons), circles (icon buttons, asterisk badges, rotating badge, globe)."
+    },
+
+    "shadows": {
+      "card": "none",
+      "button": "none",
+      "floating": "none",
+      "navigation": "none",
+      "note": "No box-shadows visible. Depth comes from color blocking, 1px borders, overlap and layered line-work. Hover may add hard offset shadow (inferred).",
+      "hoverHardShadow": "4px 4px 0 #0D0D0D",
+      "inferred": true
+    },
+
+    "borders": {
+      "hairline": "1px solid #0D0D0D",
+      "softHairline": "1px solid #CFCBC0",
+      "onDark": "1px solid #3A3A3A",
+      "dividerVertical": "1px solid #0D0D0D",
+      "circleOutline": "1.5px solid"
+    },
+
+    "breakpoints": {
+      "mobile": "0-639px",
+      "tablet": "640-1023px",
+      "laptop": "1024-1439px",
+      "desktop": "1440px+"
+    }
+  },
+
+  "globalLayout": {
+    "maxWidth": "1440px",
+    "pageWidth": "100%",
+    "containerPadding": "0 (sections are full-bleed bands; inner content padded 40-56px)",
+    "grid": {
+      "type": "Mixed: bordered bento bands. Hero is 3-column asymmetric (heading ~40% / portrait ~26% / intro+CTA ~34%). Projects band is 1 label column + 4 equal cards. Services band is 1 blue panel + 3x2 grid + 1 black panel.",
+      "columns": 12,
+      "gutter": "8px (cards) / 0 (bordered cells)",
+      "heroColumns": "40% 26% 34%",
+      "projectsColumns": "24% repeat(4, 1fr)",
+      "servicesColumns": "23.5% 53.2% 23.3%",
+      "testimonialColumns": "20% 1fr 1fr 1fr 12%",
+      "ctaColumns": "36% 18% 46%",
+      "footerColumns": "14% 22% 28% 22% 14%"
+    },
+    "sectionGap": "0 (sections butt directly against each other; contrast of color separates them)",
+    "alignment": "Left-aligned text throughout. Heavy left edge alignment at x=40px (1440: ~56px). Elements intentionally overlap and bleed.",
+    "verticalRhythm": "Bands of varying height: hero ~750px, ticker ~58px, projects ~470px, services ~470px, testimonials ~245px, CTA ~270px, footer ~205px (at 1440 scale)",
+    "fullWidthVsContained": "All bands full-width backgrounds; content spans nearly full width with 40-56px side padding.",
+    "behavior": {
+      "desktop": "Layout as shown. Max container 1440px, centered; backgrounds bleed edge-to-edge.",
+      "laptop": "Same structure; display type scales with vw; padding reduces to 40px.",
+      "tablet": "Hero becomes 2-row: heading full-width, then portrait + intro side by side. Projects become 2x2 grid with label above. Services become 2 columns. Testimonials stack to single column or horizontal scroller. CTA stacks.",
+      "mobile": "Single column. Heading full-width ~ 22vw type. Portrait full-width below heading. Cards 1-up or horizontal snap scroller. Services grid 1-2 columns. Footer stacks."
+    },
+    "inferred": true
+  },
+
+  "navbar": {
+    "height": "92px (screenshot ~58px)",
+    "position": "sticky",
+    "top": "0",
+    "background": "#F6F3EC",
+    "backdropBlur": "none",
+    "border": { "bottom": "1px solid #0D0D0D", "note": "Bottom hairline runs full width at y~58 in screenshot; there is also a vertical hairline separating logo block from links." },
+    "shadow": "none",
+    "layout": "flex; logo cell fixed-width left, links grouped after vertical divider, status indicator pushed far right",
+    "logo": {
+      "type": "icon-only mark",
+      "glyph": "Bold six-armed asterisk, black, ~34px wide in screenshot (~54px)",
+      "cell": { "width": "150px (screenshot ~95px)", "height": "100%", "borderRight": "1px solid #0D0D0D", "alignment": "center" },
+      "alt": "Studio logo"
+    },
+    "links": [
+      { "label": "WORK", "href": "#work", "active": false },
+      { "label": "ABOUT", "href": "#about", "active": false },
+      { "label": "EXPERTISE", "href": "#expertise", "active": false },
+      { "label": "JOURNAL", "href": "#journal", "active": false },
+      { "label": "CONTACT", "href": "#contact", "active": false }
+    ],
+    "linkStyle": {
+      "font": "mono", "size": "12px", "weight": 700, "letterSpacing": "0.08em", "color": "#0D0D0D", "textTransform": "uppercase",
+      "gap": "56px",
+      "paddingLeft": "48px",
+      "hover": "underline 2px offset 6px in #0B3CF5 or color shift to blue",
+      "activeState": "Not visible in reference; inferred as underline or blue text",
+      "inferred": true
+    },
+    "statusIndicator": {
+      "text": "AVAILABLE FOR PROJECTS",
+      "font": "mono 10px, letterSpacing 0.08em, uppercase, color #0D0D0D",
+      "dot": { "shape": "circle", "size": "10px", "color": "#0B3CF5", "position": "right of text, 8px gap", "animation": "slow pulse (inferred)" },
+      "position": "absolute right 32px, vertically centered"
+    },
+    "cta": null,
+    "mobile": {
+      "height": "64px",
+      "layout": "logo left, status dot + hamburger right",
+      "hamburger": { "size": "44x44", "lines": 2, "stroke": "2px #0D0D0D", "border": "1px solid #0D0D0D" },
+      "menu": "Full-screen overlay, background #0B3CF5, links in display font 14vw uppercase in lime, asterisk separators",
+      "hideStatusText": true,
+      "inferred": true
+    },
+    "scrollBehavior": "Stays pinned; no shrink needed. Optional hide on scroll down / show on scroll up (inferred)."
+  },
+
+  "pages": [
+    {
+      "id": "home",
+      "sections": [
+        {
+          "id": "hero",
+          "type": "hero-asymmetric",
+          "order": 1,
+          "layout": {
+            "height": "~750px (screenshot 58-528 = 470px)",
+            "width": "100%",
+            "container": "full-bleed with padding 56px left",
+            "columns": "3 columns: heading (0-37% of width), portrait (42.5%-68%), intro + CTA (71%-100%)",
+            "dividers": "A vertical 1px black hairline at ~64.5% width (x=582 of 900) running from top of hero to the ticker, plus a short horizontal hairline at top (y~87) spanning x=0 to the vertical line.",
+            "positioning": "Heading in normal flow; portrait, crosshair, squiggle, ink splat and globe are absolutely positioned and overlap column edges.",
+            "background": "#F6F3EC"
+          },
+          "content": {
+            "heading": {
+              "lines": [
+                { "text": "DESIGN", "color": "#0D0D0D" },
+                { "text": "THAT", "color": "#0D0D0D", "trailing": "black circular badge (diameter ~ cap-height, ~60px at screenshot / ~96px) containing white six-arm asterisk; sits inline right of THAT, vertically centered on the cap height" },
+                { "text": "BREAKS", "color": "#0B3CF5", "effect": "Subtle liquid/wave distortion (SVG displacement or warped baseline) on the lower-left of 'BREAKS' - letters appear slightly smeared at the bottom of 'B','R','E'" },
+                { "text": "THE GRID.", "color": "#0D0D0D" }
+              ],
+              "font": "display (ultra-condensed heavy)",
+              "size": "~184px at 1440 (cap height ≈ 128px)",
+              "lineHeight": 0.88,
+              "width": "~37% of viewport (≈ 530px at 1440)",
+              "alignment": "left",
+              "textTransform": "uppercase",
+              "tightStacking": "Lines nearly touch: leading ≈ 0.88em"
+            },
+            "intro": {
+              "text": "I'M A MULTIDISCIPLINARY DESIGNER CRAFTING DIGITAL EXPERIENCES THAT FEEL BOLD, UNEXPECTED, AND UNFORGETTABLE.",
+              "font": "mono",
+              "size": "13px (screenshot ~11px)",
+              "lineHeight": 1.6,
+              "letterSpacing": "0.06em",
+              "color": "#0D0D0D",
+              "width": "~260px, wraps in 6 short lines",
+              "position": "right column, vertically ~ 40% down the hero"
+            },
+            "cta": {
+              "label": "ABOUT ME",
+              "variant": "pill-blue-with-icon-circle",
+              "width": "~245px (screenshot 153px)",
+              "height": "~64px (screenshot 40px)",
+              "icon": "Right-pointing arrow in a darker-blue circle at left end of pill",
+              "position": "below intro, ~50px gap"
+            }
+          },
+          "visual": {
+            "portrait": {
+              "position": "Absolute, centered column; x ≈ 42.5%-68% of width; y from ~36px below nav to ~ 24px above ticker",
+              "size": "~372 x 640px (screenshot 232 x 400)",
+              "aspectRatio": "approx 0.58 (portrait 29:50)",
+              "content": "Side-profile of a woman facing left, hair in a high bun, wearing a black turtleneck; chin lifted, eyes closed/lowered",
+              "treatment": "Duotone: skin/background tinted acid lime #C9FF2F, shadows/hair/clothes pure black. High contrast, slight grain. No border, no radius.",
+              "objectFit": "cover",
+              "objectPosition": "center top",
+              "overlay": "none"
+            },
+            "decorations": [
+              { "name": "crosshair-registration-mark", "description": "Thin black plus/cross mark made of two intersecting long hairlines with a small square outline overlapping at the center; sits just outside the portrait top-left corner (x≈350-385, y≈85-125 in screenshot).", "stroke": "1px #0D0D0D", "layer": "decorations" },
+              { "name": "lime-squiggle", "description": "Two stacked wavy lines (sine-wave) in lime #C9FF2F, stroke ~3px, width ~55px, positioned top-right of portrait (x≈643-695, y≈92-118).", "layer": "decorations" },
+              { "name": "ink-splat-asterisk", "description": "Black dry-brush ink splatter / scratchy streaks cutting diagonally across the bottom-left corner of the portrait, with a solid black asterisk overlapping the portrait bottom-left corner (x≈365-420, y≈460-500). Overlaps the photo edge and bleeds outside.", "layer": "above portrait" },
+              { "name": "ink-splat-top-right", "description": "Small black brush-stroke marks along the portrait's upper-right edge (x≈590-615, y≈150-190).", "layer": "above portrait" },
+              { "name": "blue-flowing-line", "description": "Two or three thin (1.5px) royal-blue sinuous lines crossing each other in a long vertical S-curve along the right edge, running from top (x≈800,y≈58) down to ticker (x≈860,y≈520). Looks like a wireframe ribbon.", "stroke": "#0B3CF5", "layer": "decorations" },
+              { "name": "wireframe-globe-hero", "description": "Black thin-line globe (latitude/longitude lines, slightly squashed), diameter ~75px (screenshot) ~120px, bottom right at x≈745-820, y≈430-500. 1px stroke #0D0D0D.", "layer": "decorations" },
+              { "name": "black-asterisk-badge", "description": "Black filled circle with white asterisk after the word THAT.", "layer": "content" }
+            ]
+          },
+          "spacing": {
+            "paddingTop": "40px",
+            "paddingBottom": "0 (hero meets ticker flush)",
+            "paddingLeft": "56px",
+            "gaps": "intro to CTA ~50px"
+          },
+          "responsive": {
+            "tablet": "Heading spans full width at ~16vw; portrait moves to left 50%, intro + CTA right 50%; decorative blue line hidden or reduced.",
+            "mobile": "Order: heading (~22vw, 4 lines) → portrait (full width, 4:5 crop) → intro → CTA full width. Globe and blue line become small decorations; ink splat stays at portrait corner. Vertical dividers removed."
+          },
+          "interactions": {
+            "entrance": "Lines of heading reveal upward from a mask (stagger 0.08s). Portrait clip-path reveal left-to-right. Squiggle draws in.",
+            "hover": "ABOUT ME pill arrow circle slides/rotates; BREAKS may jitter/liquid distort on hover",
+            "ambient": "Globe slow rotation 40s; asterisk badge rotates 360° on 12s loop"
+          }
+        },
+
+        {
+          "id": "marquee-ticker",
+          "type": "marquee",
+          "order": 2,
+          "layout": { "height": "~58px (screenshot 37px)", "width": "100%", "alignment": "vertically centered", "overflow": "hidden", "direction": "left" },
+          "content": {
+            "items": ["DESIGN", "EXPERIENCE", "BRAND", "INTERFACE", "MOTION", "STRATEGY", "DESIGN", "EXPERIENCE", "BRAND", "INTERFACE", "MOTION"],
+            "separator": "✱ (black six-arm asterisk glyph)",
+            "note": "The list repeats; text is clipped at the right edge ('MOTI...'), implying an infinite loop."
+          },
+          "visual": { "background": "#C9FF2F", "textColor": "#0D0D0D", "font": "mono 14px bold uppercase tracking 0.06em", "border": "top and bottom borderless; flush with hero above and dark section below", "gapBetweenItems": "24px around each asterisk" },
+          "spacing": { "paddingY": "0", "itemGap": "24px" },
+          "responsive": { "mobile": "Height 44px, font 12px; same infinite loop, speed slightly faster" },
+          "interactions": { "animation": { "type": "marquee", "duration": "30s", "easing": "linear", "iteration": "infinite", "direction": "right-to-left", "pauseOnHover": true } }
+        },
+
+        {
+          "id": "selected-projects",
+          "type": "project-showcase",
+          "order": 3,
+          "layout": {
+            "height": "~470px (screenshot 565-860 = 295px)",
+            "width": "100%",
+            "container": "full-bleed, padding 56px left/right ~ 24px top",
+            "columns": "left info column (~24%) + 4 equal project cards",
+            "cardGap": "8px (screenshot ~7px)",
+            "alignment": "Cards top-aligned with the section top padding; left column internally has heading at top, paragraph + button mid, arrow at bottom"
+          },
+          "content": {
+            "heading": { "text": "SELECTED PROJECTS", "lines": ["SELECTED", "PROJECTS"], "font": "display ~56px", "color": "#C9FF2F", "lineHeight": 0.95 },
+            "headingCtaIcon": { "type": "circular outline arrow button", "diameter": "~36px (screenshot 24px)", "stroke": "1.5px #C9FF2F", "arrow": "→ in lime", "position": "right of heading, vertically aligned to the second line" },
+            "description": { "text": "A selection of recent work where strategy meets creativity and ideas come to life.", "font": "mono 12px", "color": "#F6F3EC", "lineHeight": 1.7, "maxWidth": "~180px" },
+            "button": { "label": "VIEW ALL WORK", "variant": "lime-pill" },
+            "decorativeArrow": { "glyph": "↘ thin diagonal arrow in light grey/white outline", "size": "~28px", "position": "bottom-left of left column" },
+            "cards": [
+              { "index": "01", "title": "NEBULA STUDIO", "tag": "BRANDING / IDENTITY", "image": "Flat graphic composition: royal-blue (#0B3CF5) field with a large cream (#E9E4D6) organic swoosh/curved blob shape cutting diagonally across; abstract, no text." },
+              { "index": "02", "title": "ECHO MAGAZINE", "tag": "EDITORIAL / PRINT", "image": "Black & white photograph of an open magazine/book spread, close angle, giant partial serif/bold letters 'OEF' printed on the right page, shallow depth of field, strong grayscale contrast." },
+              { "index": "03", "title": "AXIOM APP", "tag": "UI/UX DESIGN", "image": "3D render: glossy cobalt-blue extruded letter 'A' shaped like a faceted prism/arrow on a deep navy gradient background with soft specular highlights; blue-on-blue." },
+              { "index": "04", "title": "VERTEX LABS", "tag": "WEB DESIGN", "image": "Black & white architectural photo of brutalist concrete building with stepped geometric volumes viewed from below, strong shadows; high contrast monochrome." }
+            ]
+          },
+          "visual": {
+            "background": "#1A1A1A",
+            "card": {
+              "width": "~250px (screenshot 155px)",
+              "totalHeight": "~385px (screenshot 237px)",
+              "imageHeight": "~300px (screenshot 190px)",
+              "captionHeight": "~85px (screenshot 47px)",
+              "captionBg": "#F6F3EC",
+              "numberBadge": { "size": "~38px square (screenshot 25px)", "background": "#C9FF2F", "text": "mono bold 12px black", "position": "top-left corner flush with image corner (0,0)" },
+              "title": "mono 13px bold uppercase, black, left padding 12px",
+              "tag": "mono 9px uppercase letterSpacing 0.1em, #6B6B66",
+              "border": "none; cards are separated by dark gutter",
+              "radius": 0
+            }
+          },
+          "spacing": { "paddingTop": "40px", "paddingBottom": "40px", "paddingLeft": "56px", "cardGap": "8px", "leftColumnGaps": "heading → paragraph 56px; paragraph → button 24px" },
+          "responsive": {
+            "tablet": "Left column becomes top header row; cards 2x2.",
+            "mobile": "Heading + description stacked; cards in horizontal scroll-snap carousel (82vw wide) or 1-up column; View All Work button full-width."
+          },
+          "interactions": {
+            "cardHover": "Image scales 1.06 inside overflow hidden frame, caption title shifts to blue, number badge flips to blue/white; cursor changes to custom '✱ VIEW' circle (inferred).",
+            "entrance": "Cards stagger fade-up 0.1s apart on scroll."
+          }
+        },
+
+        {
+          "id": "what-i-do-best",
+          "type": "services-bento",
+          "order": 4,
+          "layout": {
+            "height": "~470px (screenshot 860-1152 = 292px)",
+            "columns": "[blue panel 23.5%] [3x2 services grid 53.2%] [black decorative panel 23.3%]",
+            "rows": 2,
+            "gridBorders": "1px solid #0D0D0D hairlines between service cells (vertical lines at x≈371 and 532, horizontal at y≈1010 in screenshot)"
+          },
+          "content": {
+            "intro": {
+              "heading": "WHAT I DO BEST ✱",
+              "headingStyle": "display ~56px lime #C9FF2F, line break after 'WHAT I DO', 'BEST' followed by small light-blue outline asterisk",
+              "paragraph": "From concept to execution, I design with intention and deliver with impact.",
+              "paragraphStyle": "mono 12px, #F6F3EC, lineHeight 1.7"
+            },
+            "services": [
+              { "title": "BRANDING", "description": "Brand identities that stand out and stick.", "icon": "Outlined eye-in-oval / rounded eye with concentric iris" },
+              { "title": "UI/UX DESIGN", "description": "Digital experiences that are intuitive and engaging.", "icon": "Two overlapping outlined squares / layered frames" },
+              { "title": "WEB DESIGN", "description": "Modern, responsive websites built to perform.", "icon": "Outlined six-armed asterisk with hollow arms" },
+              { "title": "ART DIRECTION", "description": "Visual storytelling that creates emotion and meaning.", "icon": "Outlined flower/rosette with 6 petals and center circle" },
+              { "title": "MOTION DESIGN", "description": "Bringing ideas to life through movement and rhythm.", "icon": "Outlined globe/circle with curved orbit lines" },
+              { "title": "STRATEGY", "description": "Design that's backed by research and clear goals.", "icon": "Concentric circles (target / bullseye)" }
+            ]
+          },
+          "visual": {
+            "bluePanel": {
+              "background": "#0B3CF5",
+              "decoration": "Large outlined asterisk (6 long thin arms, 1.5px stroke, color #4A6BFF at ~60% opacity) occupying lower half of panel, ~130px screenshot (~210px), bottom-left aligned, partially bleeding"
+            },
+            "servicesGrid": {
+              "background": "#F6F3EC",
+              "cell": { "width": "~255px (screenshot 160px)", "height": "~235px (screenshot 146px)", "padding": "20px", "layout": "icon top-left (36px), title + description anchored bottom-left", "border": "1px solid #0D0D0D (hairline between cells, none on outer edge)" },
+              "iconStyle": "Thin 1.2px black outline icons, ~30px, custom; hollow",
+              "title": "mono 12px bold uppercase #0D0D0D, letterSpacing 0.06em",
+              "description": "mono 10-11px #6B6B66, lineHeight 1.5, max 3 lines"
+            },
+            "blackPanel": {
+              "background": "#0E0E0E",
+              "decoration": "Two large lime (#C9FF2F) 3D spheres rendered as halftone/grainy noise-shaded orbs: upper orb is cropped at top-left edge of panel (partly off-canvas), lower orb sits lower-right; light source from top-left so the lit side is solid lime and the shadow side dissolves into black stippled grain. Sphere diameters ≈ 150px & 130px (screenshot) ~ 240px/210px.",
+              "arrow": "Thin outlined diagonal arrow ↗ in white/grey at bottom-right, ~28px"
+            }
+          },
+          "spacing": { "bluePanelPadding": "32px", "cellPadding": "20px", "iconToTitleGap": "auto (space-between)" },
+          "responsive": {
+            "tablet": "Blue panel full-width on top; grid 3x2 → 2x3; black panel becomes a 200px-tall strip beneath.",
+            "mobile": "Blue panel; services 1 column (or 2 columns compact) with horizontal rows; black panel 160px tall with orbs shrunk."
+          },
+          "interactions": {
+            "cellHover": "Cell background switches to lime #C9FF2F, icon stroke thickens, arrow ↗ appears top-right",
+            "orbs": "Slow parallax float (y ±20px) and grain shimmer; mouse parallax 0.05",
+            "asterisk": "Blue outline asterisk rotates slowly with scroll"
+          }
+        },
+
+        {
+          "id": "kind-words",
+          "type": "testimonials",
+          "order": 5,
+          "layout": {
+            "height": "~245px (screenshot 1152-1305 = 153px)",
+            "columns": "[title 20%] [3 testimonial columns equal] [rotating badge 12%]",
+            "dividers": "Thin 1px black vertical hairlines between testimonial columns (at x≈393 and 582 in screenshot)",
+            "alignment": "Top aligned"
+          },
+          "content": {
+            "heading": "KIND WORDS",
+            "headingDecoration": "Solid blue circle ~14px (screenshot ~16px) below heading, left-aligned",
+            "testimonials": [
+              { "quote": "Working with this designer was a game-changer. The brand went from invisible to unforgettable.", "author": "— LENA PARK", "role": "FOUNDER, MODEA" },
+              { "quote": "Super creative, fast, and deeply intuitive. Delivered beyond what we imagined.", "author": "JASON MILLER", "role": "CEO, ECHO LABS" },
+              { "quote": "A rare mix of artistry and strategy. Every detail was intentional and elevated.", "author": "PRIYA SHAH", "role": "CMO, VERTEX LABS" }
+            ],
+            "badge": {
+              "type": "circular rotating text badge",
+              "diameter": "~100px (screenshot 70px)",
+              "centerGraphic": "Thin black wireframe globe",
+              "ring": "Circular text running around globe (small mono caps, tracking wide); text partly legible e.g. 'DESIGN / DESIGN' repeating - treat as decorative",
+              "accent": "Small blue six-arm asterisk overlapping the bottom-right of badge",
+              "position": "far right, vertically centered-lower"
+            }
+          },
+          "visual": {
+            "background": "#F6F3EC",
+            "quoteMark": { "glyph": "Heavy closing/opening double quote ❝ in blue #0B3CF5", "size": "~36px (screenshot 24px)" },
+            "quoteText": "mono 13px #0D0D0D lineHeight 1.6",
+            "authorBlock": "Name: mono 11px bold uppercase; role: mono 10px uppercase #6B6B66 (role directly below name)",
+            "borderTop": "1px solid #0D0D0D from the band above"
+          },
+          "spacing": { "paddingTop": "40px", "paddingBottom": "32px", "columnPadding": "0 32px", "quoteMarkToText": "16px", "textToAuthor": "24px" },
+          "responsive": {
+            "tablet": "Title row on top, testimonials in horizontal scroll-snap row (70vw each), badge moved to title row right side.",
+            "mobile": "Heading + blue dot, then horizontal snap carousel of quote cards (85vw) with dots; badge reduced to 72px and aligned right."
+          },
+          "interactions": {
+            "badgeRotation": { "type": "rotate", "duration": "18s", "easing": "linear", "iteration": "infinite" },
+            "entrance": "Quotes fade-up stagger 0.12s; quote marks scale-in"
+          }
+        },
+
+        {
+          "id": "cta-banner",
+          "type": "cta-split",
+          "order": 6,
+          "layout": {
+            "height": "~270px (screenshot 1305-1472 = 167px)",
+            "columns": "[headline on lime ~36%] [neon image tile ~18%] [CTA text + big wireframe globe ~46%]",
+            "alignment": "Headline vertically centered left; CTA block vertically centered-right"
+          },
+          "content": {
+            "heading": { "lines": ["LET'S CREATE", "SOMETHING BOLD."], "emphasis": "BOLD. in blue #0B3CF5", "font": "display ~84px (screenshot 52px), black", "lineHeight": 0.92 },
+            "imageTile": { "description": "Abstract dark navy photo with bright electric-blue light streaks/neon fibers forming a web of converging beams (long exposure light trails).", "size": "~260px wide x full band height minus bottom-left cutout", "objectFit": "cover" },
+            "arrowTile": { "description": "Lime square (~64px screenshot ~ 105px) at the bottom-left of the image tile containing a thin diagonal arrow ↗ in black outline", "position": "bottom-left of image tile, overlapping its lower edge" },
+            "subheading": "HAVE A PROJECT IN MIND?",
+            "paragraph": "I'm currently available for freelance and full-time opportunities.",
+            "button": { "label": "GET IN TOUCH", "variant": "blue-pill-with-icon-circle", "icon": "Envelope/mail icon in lighter-blue circle at left" },
+            "globe": "Large lime-filled wireframe globe with thick black outlines, flattened ellipse tilted; extends past the right edge (bleed), ~220px (screenshot 140px) wide, 1px-1.5px black stroke over lime."
+          },
+          "visual": {
+            "background": "#C9FF2F",
+            "headlineBg": "#C9FF2F",
+            "imageTileBg": "navy photo",
+            "globeStroke": "#0D0D0D 1.5px",
+            "borderTop": "none"
+          },
+          "spacing": { "paddingLeft": "56px", "paddingY": "40px", "headingToButton": "n/a", "ctaStackGap": "12px" },
+          "responsive": {
+            "tablet": "Headline full-width; image + CTA side by side below.",
+            "mobile": "Headline 14vw; image tile 16:9 with arrow tile overlapping bottom-left; CTA text + full-width pill; globe becomes a 120px decorative element at the top-right corner, cropped."
+          },
+          "interactions": {
+            "arrowTile": "On hover arrow translates ↗ 6px and tile fills black with lime arrow",
+            "button": "Icon circle expands to fill pill on hover",
+            "globe": "Slow rotation / scroll-linked rotate",
+            "imageTile": "Light streak parallax or subtle video loop (inferred)"
+          }
+        },
+
+        {
+          "id": "footer-section",
+          "type": "footer",
+          "order": 7,
+          "layout": { "ref": "footer" },
+          "content": { "ref": "footer" },
+          "visual": { "ref": "footer" },
+          "spacing": { "ref": "footer" },
+          "responsive": { "ref": "footer" },
+          "interactions": { "ref": "footer" }
+        }
+      ]
+    }
+  ],
+
+  "components": {
+    "Button": {
+      "variants": {
+        "primaryBluePill": {
+          "variant": "primary",
+          "height": "64px",
+          "padding": "10px 32px 10px 10px",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "letterSpacing": "0.08em",
+          "textTransform": "uppercase",
+          "radius": "999px",
+          "background": "#0B3CF5",
+          "textColor": "#FFFFFF",
+          "border": "1px solid #0B3CF5",
+          "shadow": "none",
+          "iconSlot": { "position": "left", "size": "44px", "shape": "circle", "background": "#0A2FC4 (darker blue) / #4A6BFF for CTA", "icon": "arrow-right (About Me) or mail (Get in Touch), white, 1.5px stroke" },
+          "hover": { "background": "#0A2FC4", "iconSlot": "arrow slides right 4px; circle scales 1.08", "transition": "0.25s ease-out" },
+          "active": { "transform": "scale(0.98)" },
+          "disabled": { "opacity": 0.4 },
+          "focus": "3px outline #C9FF2F with 2px offset",
+          "mobile": "full width, height 56px"
+        },
+        "limePill": {
+          "variant": "secondary-on-dark",
+          "height": "~46px",
+          "padding": "0 28px",
+          "fontSize": "11px",
+          "fontWeight": 700,
+          "radius": "999px",
+          "background": "#C9FF2F",
+          "textColor": "#0D0D0D",
+          "border": "none",
+          "hover": { "background": "#DBFF6B", "transform": "translateY(-2px)" },
+          "active": { "transform": "scale(0.98)" },
+          "usage": "VIEW ALL WORK"
+        },
+        "circleArrowOutline": {
+          "variant": "icon-only ghost",
+          "size": "36px",
+          "radius": "50%",
+          "background": "transparent",
+          "border": "1.5px solid #C9FF2F",
+          "icon": "arrow-right #C9FF2F",
+          "hover": { "background": "#C9FF2F", "iconColor": "#0D0D0D" }
+        },
+        "squareArrowTile": {
+          "variant": "special",
+          "size": "105px",
+          "radius": 0,
+          "background": "#C9FF2F",
+          "icon": "arrow-up-right, 1.2px black outline, 32px",
+          "hover": { "background": "#0D0D0D", "iconColor": "#C9FF2F" }
+        }
+      }
+    },
+    "Card": {
+      "ProjectCard": {
+        "width": "250px",
+        "height": "385px",
+        "structure": "image (top, 78%) + caption bar (bottom, 22%)",
+        "background": "#F6F3EC (caption)",
+        "border": "none",
+        "radius": 0,
+        "shadow": "none",
+        "badge": "NumberBadge",
+        "typography": "title cardTitle; tag caption",
+        "hover": "image scale 1.06; caption text blue",
+        "mobile": "82vw wide in snap carousel"
+      },
+      "ServiceCell": {
+        "width": "255px",
+        "height": "235px",
+        "padding": "20px",
+        "background": "#F6F3EC",
+        "border": "1px hairline #0D0D0D",
+        "radius": 0,
+        "icon": "30px outline",
+        "hover": "bg #C9FF2F",
+        "mobile": "full-width row, height auto, icon left"
+      },
+      "TestimonialCard": {
+        "width": "~300px",
+        "padding": "0 32px",
+        "background": "transparent",
+        "border": "1px left hairline (separator)",
+        "structure": "blue quote mark → quote → name → role",
+        "hover": "none",
+        "mobile": "85vw snap card"
+      }
+    },
+    "Badge": {
+      "NumberBadge": { "size": "38px", "background": "#C9FF2F", "text": "mono bold 12px #0D0D0D", "radius": 0, "position": "top-left of card image" },
+      "StatusDot": { "size": "10px", "color": "#0B3CF5", "radius": "50%", "animation": "pulse 2s infinite" },
+      "AsteriskBadge": { "size": "96px", "background": "#0D0D0D", "iconColor": "#FFFFFF", "radius": "50%", "usage": "Inline after 'THAT'" },
+      "RotatingBadge": { "size": "100px", "content": "globe + circular text + blue asterisk", "animation": "rotate 18s linear infinite" }
+    },
+    "Input": { "note": "No inputs are visible in the reference. None invented.", "present": false },
+    "Navbar": { "ref": "navbar" },
+    "Marquee": { "height": "58px", "background": "#C9FF2F", "text": "mono 14px bold uppercase", "separator": "✱", "animation": "linear infinite 30s" },
+    "SectionHeading": { "font": "display", "size": "56px", "lineHeight": 0.95, "variants": ["lime-on-dark", "black-on-cream", "lime-on-blue"] },
+    "QuoteMark": { "glyph": "❝", "color": "#0B3CF5", "size": "36px", "weight": "heavy" },
+    "WireframeGlobe": { "stroke": "1px–1.5px", "colors": ["#0D0D0D"], "variants": ["hero (transparent)", "badge (small)", "cta (large, on lime)", "footer (icon, white on dark)"] },
+    "Footer": { "ref": "footer" }
+  },
+
+  "media": {
+    "heroPortrait": { "position": "Hero center column, absolute", "dimensions": "372x640 @1440", "aspectRatio": "29:50", "objectFit": "cover", "radius": 0, "cropping": "Waist-up, head toward top 25%", "overlay": "none", "blur": "none", "shadow": "none", "gradient": "none", "role": "functional/hero visual", "description": "Woman in left-facing profile, hair in bun, black turtleneck, duotone black + acid lime (#C9FF2F) with lime also tinting the background; high-contrast, grain texture.", "alt": "Portrait of the designer in profile, lime duotone" },
+    "projectImages": [
+      { "id": "p1", "aspectRatio": "155:190 (≈ 0.82)", "objectFit": "cover", "radius": 0, "role": "functional", "description": "Blue and cream abstract vector composition, large curved swoosh", "alt": "Nebula Studio branding artwork" },
+      { "id": "p2", "aspectRatio": "0.82", "objectFit": "cover", "radius": 0, "role": "functional", "description": "Grayscale close-up photo of open magazine with large letters", "alt": "Echo Magazine editorial spread" },
+      { "id": "p3", "aspectRatio": "0.82", "objectFit": "cover", "radius": 0, "role": "functional", "description": "Cobalt 3D glossy letter A on navy gradient", "alt": "Axiom App 3D key visual" },
+      { "id": "p4", "aspectRatio": "0.82", "objectFit": "cover", "radius": 0, "role": "functional", "description": "Grayscale brutalist concrete building, upward angle", "alt": "Vertex Labs architectural photo" }
+    ],
+    "limeOrbs": { "position": "right panel of services band", "type": "rendered 3D spheres, stippled/halftone shading", "colors": ["#C9FF2F", "#0E0E0E"], "role": "decorative", "alt": "" },
+    "ctaNeonImage": { "position": "CTA band, middle", "aspectRatio": "≈ 0.9 with notch for arrow tile", "objectFit": "cover", "description": "Dark navy with electric-blue light streak web", "role": "decorative", "alt": "" },
+    "footerPerspectiveGrid": { "position": "footer center", "type": "SVG", "description": "Lime thin-line vanishing-point grid (converging lines to center forming a tunnel/horizon grid with rectangular outlines)", "stroke": "1px #C9FF2F", "role": "decorative" },
+    "barcode": { "position": "footer right box", "type": "SVG/CSS repeating-linear-gradient", "color": "#F6F3EC on dark", "height": "~24px", "role": "decorative" }
+  },
+
+  "icons": {
+    "style": "Thin outline, geometric, 1.2-1.5px stroke, no fills (except asterisk logos and quote marks)",
+    "size": { "service": "30px", "ui": "20px", "arrow": "16-32px", "asterisk": "variable" },
+    "color": { "onCream": "#0D0D0D", "onBlue": "#4A6BFF", "onDark": "#C9FF2F / #F6F3EC" },
+    "library": "Custom line icons; closest set: Phosphor Light / Lucide with stroke-width 1.25 (approximation, inferred)",
+    "inventory": [
+      { "name": "asterisk-solid", "use": "logo, ticker separators, badges", "style": "filled, six arms, rounded ends" },
+      { "name": "asterisk-outline", "use": "web design icon, blue panel large decoration", "style": "outlined arms" },
+      { "name": "arrow-right", "use": "buttons", "style": "thin with open head" },
+      { "name": "arrow-up-right", "use": "CTA tile, services panel", "style": "thin long diagonal" },
+      { "name": "arrow-down-right", "use": "projects band bottom-left", "style": "thin long diagonal" },
+      { "name": "eye", "use": "Branding" },
+      { "name": "layers-squares", "use": "UI/UX Design" },
+      { "name": "flower", "use": "Art Direction" },
+      { "name": "globe-orbit", "use": "Motion Design" },
+      { "name": "target", "use": "Strategy" },
+      { "name": "mail", "use": "Get In Touch" },
+      { "name": "globe-wireframe", "use": "hero decoration, rotating badge, footer logo" },
+      { "name": "quote-marks", "use": "testimonials", "style": "solid heavy" }
+    ]
+  },
+
+  "animations": {
+    "principles": "Bold, snappy, editorial. Short ease-out transitions, scroll reveals with masked text, continuous marquee and rotation loops.",
+    "heroHeadline": { "type": "mask-reveal-up", "duration": "0.9s", "delay": "0.0s + 0.08s stagger per line", "easing": "power4.out", "trigger": "load" },
+    "heroPortrait": { "type": "clip-path-reveal", "from": "inset(0 100% 0 0)", "to": "inset(0 0 0 0)", "duration": "1.1s", "easing": "power3.inOut", "trigger": "load" },
+    "squiggleDraw": { "type": "svg-stroke-draw", "duration": "1s", "delay": "0.6s", "trigger": "load" },
+    "marquee": { "type": "translateX loop", "duration": "30s", "easing": "linear", "iteration": "infinite", "pauseOnHover": true },
+    "projectCards": { "type": "fade-up", "duration": "0.6s", "delay": "stagger 0.1s", "easing": "ease-out", "trigger": "scroll" },
+    "cardHover": { "type": "scale", "target": "image", "to": 1.06, "duration": "0.5s", "easing": "cubic-bezier(.2,.7,.2,1)" },
+    "serviceCellHover": { "type": "background-fill", "to": "#C9FF2F", "duration": "0.25s" },
+    "buttonHover": { "type": "icon-slide", "duration": "0.25s", "easing": "ease-out" },
+    "rotatingBadge": { "type": "rotate", "duration": "18s", "easing": "linear", "iteration": "infinite" },
+    "asteriskBadge": { "type": "rotate", "duration": "12s", "easing": "linear", "iteration": "infinite" },
+    "orbs": { "type": "float", "amplitude": "20px", "duration": "6s", "easing": "sine.inOut", "iteration": "infinite", "yoyo": true },
+    "testimonials": { "type": "fade-up", "duration": "0.6s", "stagger": "0.12s", "trigger": "scroll" },
+    "statusDot": { "type": "pulse", "duration": "2s", "iteration": "infinite" },
+    "inferred": true
+  },
+
+  "scrollBehavior": {
+    "library": "GSAP + ScrollTrigger (optional Lenis smooth scroll)",
+    "smoothScroll": { "enabled": true, "lerp": 0.1, "inferred": true },
+    "revealTriggers": [
+      { "target": ".section-heading", "start": "top 85%", "animation": "mask-reveal-up" },
+      { "target": ".project-card", "start": "top 90%", "animation": "fade-up stagger 0.1" },
+      { "target": ".service-cell", "start": "top 90%", "animation": "fade-in stagger 0.06 from grid order" },
+      { "target": ".testimonial", "start": "top 90%", "animation": "fade-up stagger 0.12" }
+    ],
+    "parallax": [
+      { "target": "hero portrait", "yPercent": -8, "scrub": true },
+      { "target": "lime orbs", "yPercent": 12, "scrub": 1 },
+      { "target": "cta globe", "rotation": 40, "scrub": true },
+      { "target": "blue flowing line", "xPercent": 4, "scrub": 1 }
+    ],
+    "pinning": "none required",
+    "horizontalScroll": "Optional on mobile only: project cards and testimonials as native scroll-snap (no pin).",
+    "progressIndicator": "none visible",
+    "inferred": true
+  },
+
+  "responsive": {
+    "desktop": {
+      "range": "1440px+",
+      "containerWidth": "1440px max, full-bleed backgrounds",
+      "typography": "Display ~184px hero; h3 56px; body 14px",
+      "grid": "As reference",
+      "navbar": "Full nav with status text",
+      "buttons": "Pills as drawn",
+      "sectionPadding": "64px Y / 56px X"
+    },
+    "laptop": {
+      "range": "1024-1439px",
+      "containerWidth": "100%",
+      "typography": "Display scales with 12.4vw (≈ 128-178px); h3 48px",
+      "grid": "Same as desktop; globe and blue line scale down 80%",
+      "navbar": "Link gap reduces to 36px",
+      "sectionPadding": "56px Y / 40px X"
+    },
+    "tablet": {
+      "range": "640-1023px",
+      "containerWidth": "100%",
+      "typography": "Display 15vw; h2 64px; h3 44px; body 13px",
+      "grid": "Hero 2 rows; projects 2x2; services 2 cols; testimonials horizontal scroller; CTA stacked",
+      "navbar": "Links collapse into hamburger; status text hidden; dot kept",
+      "buttons": "Pill height 56px",
+      "sectionPadding": "48px Y / 32px X",
+      "hidden": ["blue flowing line", "hero crosshair"],
+      "stackingOrder": "Heading → portrait/intro → ticker → label → cards"
+    },
+    "mobile": {
+      "range": "0-639px",
+      "containerWidth": "100%",
+      "typography": "Display 21vw (4 lines); h2 14vw; h3 40px; body 13px; nav 12px",
+      "grid": "Single column; project cards snap carousel; services single column rows; testimonials snap carousel",
+      "navbar": "Logo + hamburger; full-screen blue overlay menu",
+      "buttons": "Full-width pills, 56px high, 44px+ touch targets",
+      "sectionPadding": "40px Y / 20px X",
+      "stackingOrder": "Heading → portrait → intro → CTA → ticker → projects → services (blue panel first, orbs strip last) → kind words → CTA (headline → image tile → text → button) → footer",
+      "alignment": "Left-aligned preserved; no centering introduced",
+      "overflow": "No horizontal body overflow; only snap carousels and the marquee scroll horizontally",
+      "decorations": "Globe and blue line shrink or crop; ink splat remains on portrait"
+    }
+  },
+
+  "footer": {
+    "id": "footer",
+    "height": "~205px (screenshot 1472-1600 = 128px)",
+    "background": "#1A1A1A",
+    "borderTop": "none",
+    "layout": {
+      "columns": "[globe icon 14%] [Let's Connect 22%] [perspective grid graphic 28%] [Based in 22%] [legal box 14%]",
+      "separators": "1px #3A3A3A vertical dividers between columns",
+      "alignment": "top aligned, 40px padding",
+      "grid": "5 columns"
+    },
+    "content": {
+      "logo": { "type": "wireframe globe icon (white thin line)", "size": "~64px (screenshot 40px)", "position": "left column, vertically centered" },
+      "connect": {
+        "title": "LET'S CONNECT",
+        "titleStyle": "mono 12px bold lime #C9FF2F tracking 0.1em",
+        "links": ["DRIBBBLE", "BEHANCE", "LINKEDIN", "INSTAGRAM"],
+        "linkStyle": "mono 11px uppercase #F6F3EC, lineHeight 1.6",
+        "hover": "color lime with arrow ↗ appears"
+      },
+      "centerGraphic": "Lime wireframe vanishing-point grid (rays from center + concentric rectangles) occupying full column height",
+      "location": {
+        "title": "BASED IN",
+        "titleStyle": "lime mono 12px bold",
+        "text": "PLANET EARTH",
+        "textStyle": "mono 13px bold #F6F3EC uppercase",
+        "email": "hello@yourstudio.com",
+        "phone": "+1 (123) 456-7890",
+        "contactStyle": "mono 11px #F6F3EC (links)"
+      },
+      "legal": {
+        "box": { "border": "1px solid #F6F3EC", "padding": "14px 16px", "radius": 0 },
+        "text": "© 2026 YOUR STUDIO ALL RIGHTS RESERVED.",
+        "textStyle": "mono 9px uppercase #F6F3EC tracking 0.06em",
+        "asteriskTile": "Lime square (~48px) with black asterisk, at the right of the legal box top (positioned at top-right corner, x≈852-870)",
+        "barcode": "Horizontal barcode (decorative) in cream/white below text, ~170px wide, 22px high"
+      },
+      "newsletter": null,
+      "legalLinks": []
+    },
+    "visual": { "decorative": ["lime perspective grid", "barcode", "asterisk tile", "wireframe globe"] },
+    "spacing": { "paddingY": "32px", "paddingX": "48px", "columnGap": "32px" },
+    "responsive": {
+      "tablet": "Grid becomes 2 columns; perspective grid spans full width row.",
+      "mobile": "Stack: globe → Let's Connect → Based In → perspective grid (160px high) → legal box full-width; dividers become horizontal 1px #3A3A3A."
+    },
+    "interactions": { "linkHover": "lime color + underline", "gridGraphic": "subtle perspective zoom on scroll", "asteriskTile": "rotates on hover" }
+  },
+
+  "layering": {
+    "background": 0,
+    "sectionBackgrounds": 0,
+    "decorations": 1,
+    "linework": 2,
+    "portrait": 3,
+    "inkSplatOverlap": 4,
+    "heroHeading": 10,
+    "content": 10,
+    "badgesAndTiles": 12,
+    "ctaArrowTile": 12,
+    "navbar": 100,
+    "mobileMenu": 500,
+    "modal": 1000,
+    "cursor": 2000,
+    "notes": "Ink splat and asterisk render above portrait; heading text sits above portrait where they might touch; blue flowing line sits behind intro text; globe sits above bg but below the vertical divider hairlines? (inferred)",
+    "inferred": true
+  },
+
+  "accessibility": {
+    "contrast": {
+      "blackOnCream": "≈ 18:1 (AAA)",
+      "blueOnCream": "≈ 7.5:1 (AAA large / AA body)",
+      "limeOnDark": "≈ 15:1 (AAA)",
+      "blackOnLime": "≈ 16:1 (AAA)",
+      "whiteOnBlue": "≈ 8:1 (AAA)",
+      "limeOnBlue": "≈ 6:1 (AA)",
+      "mutedGreyOnCream": "#6B6B66 ≈ 4.9:1 (AA) - do not lighten",
+      "blue-on-navy (outline asterisk)": "decorative only"
+    },
+    "semantics": ["header>nav", "main", "section[aria-labelledby]", "h1 for hero heading (single)", "h2 for section headings", "ul/li for services and nav", "blockquote+figcaption for testimonials", "footer", "address for contact"],
+    "buttonLabels": "Icon-only buttons need aria-label (e.g., 'View all work', 'Open menu', 'Contact me')",
+    "imageAlt": "Meaningful alt on portrait and project images; decorative elements aria-hidden='true' and alt=''",
+    "marquee": "aria-hidden on repeated duplicate lists; provide static text equivalent for screen readers",
+    "keyboard": "All links/buttons/cards focusable in visual order; skip-to-content link; mobile menu traps focus and closes on Esc",
+    "focusStates": "3px solid #0B3CF5 outline with 3px offset on cream; 3px solid #C9FF2F on dark/blue",
+    "minTouchTarget": "44x44px",
+    "reducedMotion": "prefers-reduced-motion: disable marquee, rotations, parallax and reveals; show final states; replace hover scale with color changes",
+    "headingLettering": "Display font is uppercase via CSS only so screen readers read normal case",
+    "rotatingBadge": "aria-hidden decorative"
+  },
+
+  "implementation": {
+    "stack": { "framework": "Next.js (App Router) + React", "styling": "Tailwind CSS with CSS variable tokens", "animation": "GSAP + ScrollTrigger (+ Lenis); Framer Motion optional for hover micro-interactions", "assets": "next/image, inline SVG for line-work" },
+    "componentHierarchy": [
+      "RootLayout",
+      "Navbar (Logo, NavLinks, StatusIndicator, MobileMenu)",
+      "Hero (HeroHeading, AsteriskBadge, Portrait, Crosshair, Squiggle, InkSplat, BlueRibbonLine, Globe, Intro, PillButton)",
+      "MarqueeTicker",
+      "SelectedProjects (SectionIntro, CircleArrowButton, LimePillButton, ProjectCard x4)",
+      "ServicesBento (BluePanel, ServiceCell x6, OrbPanel)",
+      "KindWords (Heading, TestimonialColumn x3, RotatingBadge)",
+      "CtaBanner (Headline, NeonImageTile, ArrowTile, PillButton, BigGlobe)",
+      "Footer (GlobeIcon, ConnectList, PerspectiveGrid, Location, LegalBox)"
+    ],
+    "cssTokens": {
+      "--c-bg": "#F6F3EC",
+      "--c-ink": "#0D0D0D",
+      "--c-dark": "#1A1A1A",
+      "--c-blue": "#0B3CF5",
+      "--c-lime": "#C9FF2F",
+      "--c-muted": "#6B6B66",
+      "--font-display": "'Anton', 'Bebas Neue', Impact, sans-serif",
+      "--font-mono": "'Space Mono', 'JetBrains Mono', ui-monospace, monospace",
+      "--gutter": "8px",
+      "--pad-x": "clamp(20px, 4vw, 56px)",
+      "--radius-pill": "999px"
+    },
+    "cssArchitecture": "Tokens in :root; utility-first (Tailwind) with extended theme (colors, fontFamily, spacing); component CSS only for SVG/line-work and complex effects (duotone, grain, halftone). Hard edges: set rounded-none by default.",
+    "responsiveStrategy": "Mobile-first; display type with clamp()/vw; CSS grid with named areas for each band; swap to scroll-snap on small screens; use container queries for cards.",
+    "imageEffects": {
+      "duotoneHero": "Pre-process asset to lime/black duotone (preferred) or use SVG feColorMatrix + feComponentTransfer filter; add 4-6% grain overlay",
+      "halftoneOrbs": "Pre-rendered PNG/WebP with transparent alpha or SVG feTurbulence noise mask over radial gradient",
+      "bluesDistortion": "SVG feTurbulence + feDisplacementMap (scale 6-10) on the word BREAKS, animated on hover"
+    },
+    "assetsToCreate": ["asterisk.svg (solid+outline)", "globe-wireframe.svg", "perspective-grid.svg", "blue-ribbon-line.svg", "squiggle.svg", "crosshair.svg", "ink-splat.svg/png", "barcode.svg", "service icons x6", "rotating-badge-text.svg"],
+    "fontLoading": "next/font with display: swap; preload Anton and Space Mono 400/700; fallback metrics matching to prevent CLS; subset to Latin.",
+    "imageOptimization": "WebP/AVIF, explicit width/height, priority on hero portrait, lazy-load others, sizes attr per breakpoint; blur placeholders.",
+    "performance": "Animate only transform/opacity; will-change on marquee; pause offscreen animations (IntersectionObserver); keep SVG line-work inline < 10KB each; avoid large video unless the neon tile is a short looped, muted <500KB asset.",
+    "doNotChange": "Do not round corners, do not add shadows, do not center-align text blocks, do not add sections not shown. Preserve overlaps (ink splat/asterisk over portrait, arrow tile over neon image, large globe bleeding off CTA right edge)."
+  },
+
+  "visualRecreationRules": {
+    "preserveAsymmetry": true,
+    "preserveOverlaps": true,
+    "preserveDensity": true,
+    "noInventedSections": true,
+    "uncertainValuesMarked": "Estimated numeric values are scaled from a 900px screenshot and are approximate; entries tagged inferred:true or noted as inferred are not exact."
+  }
+}
