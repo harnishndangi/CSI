@@ -11,53 +11,66 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="site-wrapper" id="siteWrapper">
 
-    <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-      <div class="nav-logo" aria-label="CSI Club Logo">
-        <span class="asterisk-logo">✱</span>
-        <span class="nav-brand">CSI</span>
-      </div>
-      <div class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link active" data-page="home" id="nav-home">HOME</a>
-        <a href="#about" class="nav-link" data-page="about" id="nav-about">ABOUT</a>
-        <a href="#events" class="nav-link" data-page="events" id="nav-events">EVENTS</a>
-        <a href="#team" class="nav-link" data-page="team" id="nav-team">TEAM</a>
-        <a href="#gallery" class="nav-link" data-page="gallery" id="nav-gallery">GALLERY</a>
-        <a href="#blogs" class="nav-link" data-page="blogs" id="nav-blogs">BLOGS</a>
-        <a href="#contact" class="nav-link" data-page="contact" id="nav-contact">CONTACT</a>
-      </div>
-      <div class="nav-status">
-        <span class="status-text">ACCEPTING MEMBERS</span>
-        <span class="status-dot" aria-hidden="true"></span>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </nav>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-      <button class="mobile-close" id="mobileClose" aria-label="Close menu">X</button>
-      <nav class="mobile-nav">
-        <a href="#home" class="mobile-link" data-page="home">HOME</a>
-        <span class="mobile-sep">✱</span>
-        <a href="#about" class="mobile-link" data-page="about">ABOUT</a>
-        <span class="mobile-sep">✱</span>
-        <a href="#events" class="mobile-link" data-page="events">EVENTS</a>
-        <span class="mobile-sep">✱</span>
-        <a href="#team" class="mobile-link" data-page="team">TEAM</a>
-        <span class="mobile-sep">✱</span>
-        <a href="#gallery" class="mobile-link" data-page="gallery">GALLERY</a>
-        <span class="mobile-sep">✱</span>
-        <a href="#blogs" class="mobile-link" data-page="blogs">BLOGS</a>
-        <span class="mobile-sep">✱</span>
-        <a href="#contact" class="mobile-link" data-page="contact">CONTACT</a>
+      <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
+      <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-logo" aria-label="CSI Club Logo">
+          <span class="asterisk-logo">✱</span>
+          <span class="nav-brand">CSI</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link active" data-page="home" id="nav-home">HOME</a>
+          <a href="#about" class="nav-link" data-page="about" id="nav-about">ABOUT</a>
+          <a href="#events" class="nav-link" data-page="events" id="nav-events">EVENTS</a>
+          <a href="#team" class="nav-link" data-page="team" id="nav-team">TEAM</a>
+          <a href="#gallery" class="nav-link" data-page="gallery" id="nav-gallery">GALLERY</a>
+          <a href="#blogs" class="nav-link" data-page="blogs" id="nav-blogs">BLOGS</a>
+          <a href="#contact" class="nav-link" data-page="contact" id="nav-contact">CONTACT</a>
+        </div>
+        <div class="nav-status">
+          <span class="status-text">ACCEPTING MEMBERS</span>
+          <span class="status-dot" aria-hidden="true"></span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
       </nav>
-    </div>
 
-    <!-- ═══════════════════════════════════════ PAGE: HOME ═══════════════════════════════════════ -->
-    <section class="page active" id="home" aria-label="Home page">
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <div class="mobile-menu-header">
+          <div class="mobile-menu-brand">
+            <span class="mobile-asterisk">✱</span>
+            <span>CSI CHAPTER</span>
+          </div>
+          <button class="mobile-close" id="mobileClose" aria-label="Close navigation menu">✕</button>
+        </div>
+        <nav class="mobile-nav">
+          <a href="#home" class="mobile-link" data-page="home">HOME</a>
+          <span class="mobile-sep" aria-hidden="true">✱</span>
+          <a href="#about" class="mobile-link" data-page="about">ABOUT</a>
+          <span class="mobile-sep" aria-hidden="true">✱</span>
+          <a href="#events" class="mobile-link" data-page="events">EVENTS</a>
+          <span class="mobile-sep" aria-hidden="true">✱</span>
+          <a href="#team" class="mobile-link" data-page="team">TEAM</a>
+          <span class="mobile-sep" aria-hidden="true">✱</span>
+          <a href="#gallery" class="mobile-link" data-page="gallery">GALLERY</a>
+          <span class="mobile-sep" aria-hidden="true">✱</span>
+          <a href="#blogs" class="mobile-link" data-page="blogs">BLOGS</a>
+          <span class="mobile-sep" aria-hidden="true">✱</span>
+          <a href="#contact" class="mobile-link" data-page="contact">CONTACT</a>
+        </nav>
+        <div class="mobile-menu-footer">
+          <span class="status-dot"></span>
+          <span>CONNECTING STUDENTS &bull; 2025</span>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════ PAGE: HOME ═══════════════════════════════════════ -->
+      <section class="page active" id="home" aria-label="Home page">
 
       <!-- Hero -->
       <div class="hero">
@@ -1044,6 +1057,11 @@
       </div>
     </footer>
 
+    </div><!-- /.site-wrapper -->
+
+    <!-- GSAP & ScrollTrigger for high-performance creative animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
